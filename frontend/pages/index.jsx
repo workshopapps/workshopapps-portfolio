@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Layout from "../components/layout";
-import styles from "../styles/Home.module.css";
+import { Heading } from "@chakra-ui/react";
 
 export default function Home() {
   return (
@@ -9,7 +8,7 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      Home Page
+      <Heading>$1.7 Billion</Heading>
     </div>
   );
 }
