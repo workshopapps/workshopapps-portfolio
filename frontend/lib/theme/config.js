@@ -1,6 +1,6 @@
 export const fonts = {
-  body: "Satoshi-Regular",
-  heading: "Satoshi-Bold",
+  body: "Work Sans",
+  heading: "Work Sans",
   mono: "Menlo, monospace",
 };
 
@@ -25,18 +25,6 @@ export const colors = {
   black: "#000",
   white: {
     100: "#fff",
-  },
-  subtle_main: {
-    50: "#e7f9f9",
-    100: "#cbe6e7",
-    200: "#acd4d6",
-    300: "#8bc3c6",
-    400: "#6cb3b5",
-    500: "#53999b",
-    600: "#407779",
-    700: "#2d5556",
-    800: "#183334",
-    900: "#001212",
   },
 
   // Varient added based on the main color brand.500
