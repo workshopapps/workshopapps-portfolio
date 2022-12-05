@@ -1,7 +1,6 @@
 // 1. Import the extendTheme function
 import { extendTheme } from "@chakra-ui/react";
 import { colors, fonts, fontSizes } from "./config";
-import components from "./components";
 
 // DarkMode config
 const config = {
@@ -26,7 +25,6 @@ const theme = extendTheme({
   colors,
   fontSizes,
   styles,
-  components,
   config,
 });
 

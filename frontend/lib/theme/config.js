@@ -4,8 +4,6 @@ export const fonts = {
   mono: "Menlo, monospace",
 };
 
-// Implement the diferent baseStyles for your fontSizes
-// <Text fontSize="lg">My name is johnbosco</Text>
 export const fontSizes = {
   xs: "0.75rem",
   sm: "0.875rem",
@@ -28,59 +26,6 @@ export const colors = {
   white: {
     100: "#fff",
   },
-  // Variant generated from the main color brand.50
-  main: {
-    50: "#deffff",
-    100: "#b3fcff",
-    200: "#86f9fe",
-    300: "#5cf8fe",
-    400: "#40f6fd",
-    500: "#35dce4",
-    600: "#25abb2",
-    700: "#157a7f",
-    800: "#004a4d",
-    900: "#001a1b",
-  },
-  // Variant generated from the main color brand.100
-  second: {
-    50: "#fafae5",
-    100: "#f1f0c0",
-    200: "#e8e69a",
-    300: "#dfdc71",
-    400: "#d5d24a",
-    500: "#bcb833",
-    600: "#928f26",
-    700: "#68661b",
-    800: "#3f3d0e",
-    900: "#161400",
-  },
-  // Variant generated from the main color brand.200
-  text_dark: {
-    50: "#f1f3f3",
-    100: "#d9d9d9",
-    200: "#c0c0c0",
-    300: "#a7a7a7",
-    400: "#8d8d8d",
-    500: "#747474",
-    600: "#5a5a5a",
-    700: "#404040",
-    800: "#272727",
-    900: "#0c0d0e",
-  },
-  // Variant generated from the main color brand.300
-  text_semi_dark: {
-    50: "#dafdff",
-    100: "#aff3ff",
-    200: "#80eaff",
-    300: "#52e2fe",
-    400: "#30d8fd",
-    500: "#22bfe4",
-    600: "#1195b2",
-    700: "#006b80",
-    800: "#00404f",
-    900: "#00161e",
-  },
-  // Variant generated from the main color brand.400
   subtle_main: {
     50: "#e7f9f9",
     100: "#cbe6e7",
@@ -115,31 +60,5 @@ export const colors = {
     // subtle main color
     400: "#CFE8E9",
     // Creathor grey
-    500: "#BDBDBD",
-    // Success green
-    600: "#219653",
-    // Light gray
-    700: "#F7F7F7",
-    // border light gray
-    800: "#98A2B3",
-    // reset password bg
-    900: "#F9FFFE",
-    1000: "#f2f2f2",
-    1100: "#BBBBBB",
-    1200: "#E0E0E0",
-    1300: "rgba(0, 56, 58, 0.03)",
-    1400: "#E9F5EE",
-    1500: "#EB5757",
-    1600: "#FEF5ED",
-    1700: "rgba(0, 56, 58, 0.03)",
-    1800: "#c5303099",
-    // Purple
-    1900: "rgba(155, 81, 224, 1)",
-    2000: "rgba(155, 81, 224, 0.05)",
-    // Badge blue
-    2100: "#197DFF",
-    2200: "#E8F2FF",
-    2300: "#F2994A",
-    2400: "#FBFBED",
   },
 };
