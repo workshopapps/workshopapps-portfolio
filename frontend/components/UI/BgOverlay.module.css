@@ -1,0 +1,8 @@
+.bg_overlay {
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  background: rgba(41, 45, 50, 0.6);
+  z-index: 10;
+  overflow: hidden;
+}

@@ -1,8 +1,10 @@
 .footer {
   background: #292d32;
   padding: 70px 0;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 40px;
 }
 
@@ -20,4 +22,10 @@
 
 .link {
   color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 700px) {
+  .footerLinks {
+    flex-direction: column;
+  }
 }
