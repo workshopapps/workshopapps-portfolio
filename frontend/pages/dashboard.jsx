@@ -7,7 +7,7 @@ export default function Dashboard() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Workshop Apps | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Stack px={20}>

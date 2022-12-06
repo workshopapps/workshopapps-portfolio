@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Box, Stack, Text, Button, ButtonGroup } from "@chakra-ui/react";
 
 import bulb from "../assets/Bulb.svg";
@@ -28,17 +29,24 @@ const Homepage = () => {
 
       <Image src={bulb} alt="bulb" />
 
-      <Box display="flex" alignItems="center" flexDirection="column" gap="20px">
-        <div className={styles.button}>
-          <p className={styles.buttonText}>Our Portfolio</p>
-          <Image src={rightArrow} alt="arrow" />
-        </div>
+      <Link href="/dashboard">
+        <Box
+          display="flex"
+          alignItems="center"
+          flexDirection="column"
+          gap="20px"
+        >
+          <div className={styles.button}>
+            <p className={styles.buttonText}>Our Portfolio</p>
+            <Image src={rightArrow} alt="arrow" />
+          </div>
 
-        <Text fontSize="xl" w="60%" mx="auto" textAlign="center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </Text>
-      </Box>
+          <Text fontSize="xl" w="60%" mx="auto" textAlign="center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </Text>
+        </Box>
+      </Link>
     </Box>
   );
 };

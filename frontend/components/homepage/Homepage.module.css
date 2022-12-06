@@ -1,6 +1,6 @@
 .button {
   background: #292d32;
-  border: 6px solid rgb(184, 184, 184);
+  border: 6px solid rgb(210, 208, 208);
   color: #ffffff;
   padding: 10px;
   display: flex;
@@ -11,5 +11,5 @@
 .buttonText {
   font-size: 16px;
   padding-right: 10px;
-  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  border-right: 2px solid rgba(255, 255, 255, 0.15);
 }
