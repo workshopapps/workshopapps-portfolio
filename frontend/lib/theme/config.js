@@ -27,20 +27,16 @@ export const colors = {
     100: "#fff",
   },
 
-  // Varient added based on the main color brand.500
-  grey_varient: {
-    100: "#525C5E",
-    // dashboard text
-    200: "#475467",
-    300: "#1D2939",
-    400: "#F3FFFF",
+  text: {
+    100: "#061124",
+    200: "#676D79",
   },
 
   brand: {
     // main color
-    50: "#003638",
+    50: "#292D32",
     // second color
-    100: "#F3F2C9",
+    100: "#DEDEDE4D",
     // text dark color
     200: "#17191A",
     // text semi dark color
