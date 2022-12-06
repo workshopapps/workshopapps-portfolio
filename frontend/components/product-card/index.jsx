@@ -20,7 +20,7 @@ function ProductCard() {
           <HStack spacing={5} w="full">
             <Box
               p={2}
-              maxW="80px"
+              maxW="70px"
               rounded={6}
               background="linear-gradient(137.69deg, #EFF3FC 0%, #CFD4DE 99.91%)"
             >
