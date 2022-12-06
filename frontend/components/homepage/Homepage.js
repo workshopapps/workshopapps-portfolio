@@ -18,7 +18,7 @@ const Homepage = () => {
       alignItems="center"
       gap="100px"
     >
-      <Stack spacing={4}>
+      <Stack spacing={5}>
         <Text fontSize="5xl" w="80%" mx="auto" textAlign="center">
           A Venture studio with a ‘unique’ twist
         </Text>
