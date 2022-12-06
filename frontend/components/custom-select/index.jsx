@@ -1,26 +1,29 @@
 import React from "react";
 import { HStack, Select, Text } from "@chakra-ui/react";
 
-function CustomSelect({ options, type = "Month" }) {
+function CustomSelect({ options, type = "Month", placeholder = "December" }) {
+  const [value, setValue] = React.useState(options ? options[0].value : "");
+
   return (
     <HStack
-      spacing={-2}
+      spacing={-1}
       rounded={8}
       border="1px solid"
       py={2}
       pl={2}
-      _focusWithin={{ shadow: "outline" }}
+      _focusWithin={{ shadow: "lg" }}
       borderColor="gray.300"
     >
       <Text color="text.200">{type}:</Text>
       <Select
-        placeholder="December"
+        placeholder={placeholder}
         border={0}
         cursor="pointer"
         color="text.100"
         fontWeight="bold"
         size="sm"
-        value={options[0].value ?? ""}
+        onChange={(e) => setValue(e.target.value)}
+        value={value}
         outline="none"
         _focus={{ shadow: "" }}
         _active={{ shadow: "" }}
@@ -29,7 +32,9 @@ function CustomSelect({ options, type = "Month" }) {
       >
         {options &&
           options?.map((opt) => (
-            <options value={opt.value}>{opt.label}</options>
+            <option key={opt.value} value={opt.value}>
+              {opt.label}
+            </option>
           ))}
       </Select>
     </HStack>
@@ -37,3 +42,23 @@ function CustomSelect({ options, type = "Month" }) {
 }
 
 export default CustomSelect;
+
+export const months = [
+  { value: "jan", label: "January" },
+  { value: "feb", label: "February" },
+  { value: "mar", label: "March" },
+  { value: "apr", label: "April" },
+  { value: "may", label: "May" },
+  { value: "june", label: "June" },
+  { value: "july", label: "July" },
+  { value: "aug", label: "August" },
+  { value: "sept", label: "September" },
+  { value: "oct", label: "October" },
+  { value: "nov", label: "November" },
+  { value: "dec", label: "December" },
+];
+
+export const sortTypes = [
+  { value: "asc", label: "Ascending" },
+  { value: "des", label: "Descending" },
+];

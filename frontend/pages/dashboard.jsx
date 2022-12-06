@@ -5,7 +5,7 @@ import { Stack, HStack } from "@chakra-ui/react";
 import ProductCard from "../components/product-card";
 import CohortToggler from "../components/cohort-toggler";
 import DashboardHedaader from "../components/dashboard-header";
-import CustomSelect from "../components/custom-select";
+import CustomSelect, { months, sortTypes } from "../components/custom-select";
 
 export default function Dashboard() {
   return (
@@ -19,8 +19,8 @@ export default function Dashboard() {
         <HStack w="full" justifyContent="space-between">
           <CohortToggler />
           <HStack spacing={3}>
-            <CustomSelect />
-            <CustomSelect />
+            <CustomSelect options={months} />
+            <CustomSelect type="Sort" options={sortTypes} />
           </HStack>
         </HStack>
         <HStack>
