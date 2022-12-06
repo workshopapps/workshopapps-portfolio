@@ -1,0 +1,15 @@
+.button {
+  background: #292d32;
+  border: 6px solid rgb(210, 208, 208);
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  column-gap: 20px;
+  margin: 0 auto;
+}
+
+.buttonText {
+  font-size: 18px;
+  padding-right: 15px;
+  border-right: 2px solid rgba(255, 255, 255, 0.15);
+}

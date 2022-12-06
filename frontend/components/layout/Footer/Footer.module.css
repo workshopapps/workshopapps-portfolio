@@ -1,0 +1,23 @@
+.footer {
+  background: #292d32;
+  padding: 70px 0;
+  display: grid;
+  place-items: center;
+  gap: 40px;
+}
+
+.footerIcons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footerLinks {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.link {
+  color: rgba(255, 255, 255, 0.8);
+}
