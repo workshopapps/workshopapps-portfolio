@@ -9,7 +9,7 @@ const sections = [
 ];
 
 const Section = ({ field, value }) => (
-  <Stack spacing={6} textAlign="center">
+  <Stack spacing={6} textAlign="center" minW="200px">
     <Text color="text.200" fontSize="20px">
       {field}
     </Text>
