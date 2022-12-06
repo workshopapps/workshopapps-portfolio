@@ -9,9 +9,10 @@ function CustomSelect({ options, type = "Month", placeholder = "December" }) {
       spacing={-1}
       rounded={8}
       border="1px solid"
+      transition="0.2s"
       py={2}
       pl={2}
-      _focusWithin={{ shadow: "lg" }}
+      _focusWithin={{ shadow: "md" }}
       borderColor="gray.300"
     >
       <Text color="text.200">{type}:</Text>
