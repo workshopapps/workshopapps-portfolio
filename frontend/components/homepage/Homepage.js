@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Box, Stack, Text, Button, ButtonGroup } from "@chakra-ui/react";
 
-import bulb from "../assets/Bulb.svg";
+import BulbIcon from "../assets/BulbIcon";
 import rightArrow from "../assets/RightArrow.svg";
 
 import styles from "./Homepage.module.css";
@@ -37,7 +37,8 @@ const Homepage = () => {
         </Text>
       </Box>
 
-      <Image src={bulb} alt="bulb" className={styles.bulb} />
+      {/* <Image src={bulb} alt="bulb" className={styles.bulb} /> */}
+      <BulbIcon />
 
       <Link href="/dashboard">
         <Box

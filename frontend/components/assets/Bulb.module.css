@@ -1,0 +1,36 @@
+.innerOutline {
+  stroke: #263238;
+  stroke-width: 1.4;
+  animation-name: inner-outline;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes inner-outline {
+  0% {
+    stroke: #263238;
+    stroke-width: 1.4;
+  }
+
+  25% {
+    stroke: orange;
+    stroke-width: 3;
+  }
+
+  50% {
+    stroke: #263238;
+    stroke-width: 1.4;
+  }
+
+  75% {
+    stroke: orange;
+    stroke-width: 3;
+  }
+
+  100% {
+    stroke: #263238;
+    stroke-width: 1.4;
+  }
+}
