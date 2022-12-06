@@ -1,7 +1,7 @@
 import React from "react";
 import { HStack, Select, Text } from "@chakra-ui/react";
 
-function CustomSelect() {
+function CustomSelect({ options, type = "Month" }) {
   return (
     <HStack
       spacing={-2}
@@ -12,7 +12,7 @@ function CustomSelect() {
       _focusWithin={{ shadow: "outline" }}
       borderColor="gray.300"
     >
-      <Text color="text.200">Month:</Text>
+      <Text color="text.200">{type}:</Text>
       <Select
         placeholder="December"
         border={0}
@@ -20,15 +20,17 @@ function CustomSelect() {
         color="text.100"
         fontWeight="bold"
         size="sm"
+        value={options[0].value ?? ""}
         outline="none"
         _focus={{ shadow: "" }}
         _active={{ shadow: "" }}
         _focusWithin={{ shadow: "" }}
         _focusVisible={{}}
       >
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
+        {options &&
+          options?.map((opt) => (
+            <options value={opt.value}>{opt.label}</options>
+          ))}
       </Select>
     </HStack>
   );
