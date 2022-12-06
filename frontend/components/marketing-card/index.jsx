@@ -15,7 +15,7 @@ function MarketCard() {
       <Stack
         alignItems="center"
         bg="brand.100"
-        minH="230px"
+        minH="240px"
         w="full"
         rounded="8px"
         padding="20px"
