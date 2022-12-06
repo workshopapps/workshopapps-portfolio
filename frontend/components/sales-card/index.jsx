@@ -9,28 +9,30 @@ import {
 
 function SalesCard() {
   return (
-    <Stack
-      minH="300px"
-      alignItems="center"
-      bg="brand.100"
-      w="full"
-      maxW="330px"
-      justifyContent="center"
-      rounded="8px"
-    >
-      <Stack>
-        <Text textAlign="center">Cost of selling</Text>
+    <Stack spacing={3} w="full" maxW="330px">
+      <Heading fontSize="md">Sales</Heading>
+      <Stack
+        alignItems="center"
+        bg="brand.100"
+        minH="280px"
+        w="full"
+        justifyContent="center"
+        rounded="8px"
+      >
         <Stack>
-          <CircularProgress
-            value={98}
-            color="brand.50"
-            size="200px"
-            thickness="14px"
-          >
-            <CircularProgressLabel>
-              <Heading fontSize="3xl">$5</Heading>
-            </CircularProgressLabel>
-          </CircularProgress>
+          <Text textAlign="center">Cost of selling</Text>
+          <Stack>
+            <CircularProgress
+              value={98}
+              color="brand.50"
+              size="160px"
+              thickness="14px"
+            >
+              <CircularProgressLabel>
+                <Heading fontSize="3xl">$5</Heading>
+              </CircularProgressLabel>
+            </CircularProgress>
+          </Stack>
         </Stack>
       </Stack>
     </Stack>
