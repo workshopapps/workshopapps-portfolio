@@ -31,7 +31,7 @@ function ProductCard() {
             </Heading>
           </HStack>
           <Stack>
-            <Text color="text.100">
+            <Text color="text.100" fontSize="nm">
               An application that revises grammar problems through discussions
               with a chat bot that uses AI to transcribe user input
             </Text>

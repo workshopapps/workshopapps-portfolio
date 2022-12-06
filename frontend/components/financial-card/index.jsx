@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Stack,
-  Text,
-  CircularProgress,
-  CircularProgressLabel,
-  Heading,
-  HStack,
-} from "@chakra-ui/react";
+import { Stack, Text, Heading, HStack } from "@chakra-ui/react";
 
 function FinancialCard() {
   return (
@@ -23,26 +16,17 @@ function FinancialCard() {
       >
         <Stack w="full" spacing={6}>
           <HStack justifyContent="space-between" w="full">
-            <Text color="text.200">Subscribers</Text>
-            <Heading fontSize="md">50,000</Heading>
-          </HStack>
-          <HStack justifyContent="space-between" w="full">
-            <Text color="text.200">Website Traffic</Text>
-            <Heading fontSize="md">2500 Daily</Heading>
-          </HStack>
-          <HStack justifyContent="space-between" w="full">
-            <Text color="text.200">Click-through rate</Text>
-            <Stack>
-              <CircularProgress
-                value={98}
-                thickness="12px"
-                size="60px"
-                color="brand.50"
-              >
-                <CircularProgressLabel>
-                  <Heading fontSize="nm">735</Heading>
-                </CircularProgressLabel>
-              </CircularProgress>
+            <Stack spacing={4} textAlign="center">
+              <Text fontSize="16px" color="text.100">
+                Customers
+              </Text>
+              <Heading fontSize="24px">535,000</Heading>
+            </Stack>
+            <Stack spacing={4} textAlign="center">
+              <Text fontSize="16px" color="text.100">
+                Revenue
+              </Text>
+              <Heading fontSize="24px">$700,000</Heading>
             </Stack>
           </HStack>
         </Stack>
