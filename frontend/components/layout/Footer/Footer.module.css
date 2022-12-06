@@ -1,9 +1,9 @@
 .footer {
   background: #292d32;
-  padding: 120px 0;
+  padding: 70px 0;
   display: grid;
   place-items: center;
-  gap: 50px;
+  gap: 40px;
 }
 
 .footerIcons {
