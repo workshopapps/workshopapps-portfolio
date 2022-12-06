@@ -33,7 +33,12 @@ function MarketCard() {
           <HStack justifyContent="space-between" w="full">
             <Text color="text.200">Click-through rate</Text>
             <Stack>
-              <CircularProgress value={98} color="brand.50">
+              <CircularProgress
+                value={98}
+                thickness="12px"
+                size="60px"
+                color="brand.50"
+              >
                 <CircularProgressLabel>
                   <Heading fontSize="nm">735</Heading>
                 </CircularProgressLabel>
