@@ -1,0 +1,252 @@
+/* Mobile first  */
+
+/* Hero Section */
+.main__container{
+    margin: 2rem 2rem;
+}
+
+.flex__container{
+    background-color: #292D32;
+    color: #F9F9F9;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    border-radius: 8px;
+}
+
+.flex__container h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* quote  */
+.about__quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #292D32;
+    margin: 6rem 0;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.quote__icon__container{
+    width: 100%;
+}
+
+.about__quote img{
+    width: 1.5rem;
+}
+
+.about__quote p{
+    margin-left: 1.5rem;
+}
+
+/* team  */
+.about__team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about__team h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+ /* facts  */
+ .about__facts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 6rem 0;
+}
+
+.about__facts__card{
+    width: 100%;
+}
+
+.about__facts__card h3{
+    font-weight: 700;
+    border-left: 2px solid #CDCDCD;
+    padding-left: 1rem;
+}
+
+.about__facts__card p{
+    padding-left: 1rem;
+}
+
+/* portfolio */
+.about__portfolio{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.about__portfolio h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.about__portfolio p{
+    margin: 1rem 0 3rem 0;
+}
+
+.about__portfolio a{
+    padding: 5px 15px;
+    background-color: #292D32;
+    color: #F9F9F9;
+    font-weight: 700;
+    text-align: center;
+    width: 250px;
+}
+
+.about__portfolio a:hover{
+    opacity: .7;
+    transition: all .5s ease-in-out;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+    /* Hero Section */
+        .main__container{
+            margin: 2rem 4rem;
+        }
+
+        .flex__container{
+            background-color: #292D32;
+            color: #F9F9F9;
+            display: flex;
+            gap: 2rem;
+            flex-direction: row;
+        }
+
+    .flex__container{
+        background-color: #292D32;
+        color: #F9F9F9;
+        display: flex;
+        padding: 4rem 2rem;
+        border-radius: 8px;
+    }
+
+    
+    .card__title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+    
+    .card{
+        width: 50%;
+    }
+    
+    .description{
+        padding-right: 4rem;
+    }
+    
+    /* quote  */
+    .about__quote{
+        margin: 8rem 2rem;
+    }
+
+    .quote__icon__container{
+        width: 75%;
+    }
+    
+    .about__quote p{
+        width: 55%;
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+    
+    .about__quote img{
+        width: 2rem;
+    }
+
+    /* team  */
+    .about__team{
+        flex-direction: row;
+        gap:4rem;
+    }
+    
+    .img__description{
+        width: 50%;
+        align-items: center;
+    }
+    
+    /* facts  */
+    .about__facts{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 8rem 0;
+    }
+    
+    .about__facts__card{
+        width: 150px;
+    }
+    
+    
+    /* portfolio */  
+    .about__portfolio{
+        text-align: center;
+    }
+
+    .about__portfolio a{
+        padding: 10px 20px;
+        margin: 10px auto;
+    }
+}
+
+
+/* Desktop  */
+@media (min-width: 1024px) {
+    .main__container p{
+        font-size: 1.2rem;
+    }
+
+    .main__container h2{
+        font-size: 2rem;
+    }
+
+    .main__container h3{
+        font-size: 1.5rem;
+    }
+
+    /* hero  */
+    .flex__container h1{
+        font-size: 2.5rem;
+    }
+
+    /* quote */
+    .about__quote p{
+        font-size: 1.7rem;
+    }
+
+    .quote__icon__container2{
+        width: 100%;
+        margin-left: 110%;
+    }
+    
+
+    /* team */
+    .about__team h1{
+        font-size: 2.5rem;
+    }
+
+    /* facts  */
+    .about__facts__card{
+        width: 200px;
+    }
+
+      /* portfolio */  
+      .about__portfolio p{
+       margin: .5rem 23% 2.5rem 23%;
+       text-align: left;
+    }
+
+}
