@@ -1,6 +1,7 @@
 import React from "react";
 import { Stack, Text, Heading, HStack } from "@chakra-ui/react";
 import Image from "next/image";
+import gritLogo from "../../public/images/grit.svg";
 
 function ProductCard() {
   return (
@@ -16,9 +17,13 @@ function ProductCard() {
         pt="27px"
       >
         <Stack w="full" spacing={6}>
-          <HStack justifyContent="space-between" w="full">
-            <Box></Box>
-            <Heading fontSize="md">50,000</Heading>
+          <HStack spacing={5} w="full">
+            <Box w="40" h={40} p={2}>
+              <Image alt="" src={gritLogo} />
+            </Box>
+            <Heading fontFamily="Inter" color="black">
+              Gritty Grammar
+            </Heading>
           </HStack>
           <Stack>
             <Text>
