@@ -71,13 +71,14 @@ export default function Example() {
   return (
     <div style={{ width: "100%" }}>
       <ResponsiveContainer width="100%" height={100}>
-        {/* <CartesianGrid /> */}
         <BarChart width={150} height={40} data={data}>
+          <CartesianGrid strokeDasharray="4" />
           <Bar dataKey="uv" onClick={handleClick}>
             {data.map((entry, index) => (
               <Cell
                 cursor="pointer"
-                fill={index === activeIndex ? "#82ca9d" : "#8884d8"}
+                // fill={index === activeIndex ? "#82ca9d" : "#8884d8"}
+                fill="#292D32"
                 key={`cell-${index}`}
               />
             ))}
