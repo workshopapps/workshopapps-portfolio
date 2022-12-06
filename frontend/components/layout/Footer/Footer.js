@@ -13,26 +13,46 @@ import styles from "./Footer.module.css";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <Image src={logo} alt="logo" />
+      <Image src={logo} alt="logo" className={styles.footerIcon} />
 
       <div className={styles.footerIcons}>
-        <a href="https://facebook.com" target="_blank">
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          className={styles.footerIcon}
+        >
           <Image src={facebookIcon} alt="facebook" />
         </a>
 
-        <a href="https://twitter.com" target="_blank">
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          className={styles.footerIcon}
+        >
           <Image src={twitterIcon} alt="twitter" />
         </a>
 
-        <a href="https://youtube.com" target="_blank">
+        <a
+          href="https://youtube.com"
+          target="_blank"
+          className={styles.footerIcon}
+        >
           <Image src={youtubeIcon} alt="youtube" />
         </a>
 
-        <a href="https://linkedin.com" target="_blank">
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          className={styles.footerIcon}
+        >
           <Image src={linkedInIcon} alt="linkedin" />
         </a>
 
-        <a href="https://instagram.com" target="_blank">
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          className={styles.footerIcon}
+        >
           <Image src={instagramIcon} alt="instagram" />
         </a>
       </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../../assets/WorkshopAppLogo.svg";
+import Logo from "../../assets/WorkshopAppLogo";
 import HamburgerIcon from "../../assets/HamburgerIcon.svg";
 
 import styles from "./Navbar.module.css";
@@ -20,7 +20,7 @@ const Navbar = () => {
     <>
       <header className={styles.header}>
         <Link href="/">
-          <Image src={Logo} alt="logo" />
+          <Logo />
         </Link>
 
         <Image
@@ -30,8 +30,8 @@ const Navbar = () => {
           className={styles.hamburger}
         />
       </header>
-      {isOpen && <NavList handleNav={handleNav} />}
-      {isOpen && <BgOverlay handleBg={handleNav} />}
+      <NavList isOpen={isOpen} handleNav={handleNav} />
+      <BgOverlay isOpen={isOpen} handleBg={handleNav} />
     </>
   );
 };

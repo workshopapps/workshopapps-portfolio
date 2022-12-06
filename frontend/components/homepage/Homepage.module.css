@@ -1,3 +1,10 @@
+@media screen and (max-width: 900px) {
+  .bulb {
+    width: 80vw;
+    height: auto;
+  }
+}
+
 .button {
   background: #292d32;
   border: 6px solid rgb(210, 208, 208);
