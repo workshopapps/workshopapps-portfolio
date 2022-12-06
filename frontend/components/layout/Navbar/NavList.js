@@ -8,7 +8,6 @@ import close from "../../assets/Close.svg";
 const NavList = ({ handleNav }) => {
   return (
     <nav className={styles.navLinks}>
-      {/* <div > */}
       <Image
         src={close}
         alt="close"
@@ -17,29 +16,58 @@ const NavList = ({ handleNav }) => {
         }}
         className={styles.close}
       />
-      {/* </div> */}
 
-      <li className={styles.link}>
+      <li
+        className={styles.link}
+        onClick={() => {
+          handleNav();
+        }}
+      >
         <Link href="/">Home</Link>
       </li>
 
-      <li className={styles.link}>
+      <li
+        className={styles.link}
+        onClick={() => {
+          handleNav();
+        }}
+      >
         <Link href="/about">About</Link>
       </li>
 
-      <li className={styles.link}>
+      <li
+        className={styles.link}
+        onClick={() => {
+          handleNav();
+        }}
+      >
         <Link href="/method">Our Method</Link>
       </li>
 
-      <li className={styles.link}>
+      <li
+        className={styles.link}
+        onClick={() => {
+          handleNav();
+        }}
+      >
         <Link href="/contact">Contact</Link>
       </li>
 
-      <li className={styles.link}>
+      <li
+        className={styles.link}
+        onClick={() => {
+          handleNav();
+        }}
+      >
         <Link href="/team">Team</Link>
       </li>
 
-      <li className={styles.link}>
+      <li
+        className={styles.link}
+        onClick={() => {
+          handleNav();
+        }}
+      >
         <Link href="/stories">Stories</Link>
       </li>
     </nav>

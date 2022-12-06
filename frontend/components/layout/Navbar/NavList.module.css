@@ -1,7 +1,7 @@
 .navLinks {
   position: fixed;
   transform: translate(-50%, -50%);
-  top: 360px;
+  top: 370px;
   left: 50%;
   background: #ffffff;
   opacity: 0.93;
@@ -24,4 +24,5 @@
   position: absolute;
   top: 25px;
   right: 25px;
+  cursor: pointer;
 }
