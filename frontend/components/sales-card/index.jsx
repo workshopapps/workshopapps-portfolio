@@ -14,8 +14,9 @@ function SalesCard() {
       <Stack
         alignItems="center"
         bg="brand.100"
-        minH="280px"
+        minH="230px"
         w="full"
+        padding="20px"
         justifyContent="center"
         rounded="8px"
       >
@@ -25,7 +26,7 @@ function SalesCard() {
             <CircularProgress
               value={98}
               color="brand.50"
-              size="160px"
+              size="140px"
               thickness="14px"
             >
               <CircularProgressLabel>

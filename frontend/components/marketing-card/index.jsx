@@ -5,6 +5,7 @@ import {
   CircularProgress,
   CircularProgressLabel,
   Heading,
+  HStack,
 } from "@chakra-ui/react";
 
 function MarketCard() {
@@ -14,29 +15,31 @@ function MarketCard() {
       <Stack
         alignItems="center"
         bg="brand.100"
-        minH="280px"
+        minH="230px"
         w="full"
-        justifyContent="center"
         rounded="8px"
         padding="20px"
+        pt="27px"
       >
-        <Stack>
-          <HStack>
-            <Text>Subscribers</Text>
+        <Stack w="full" spacing={6}>
+          <HStack justifyContent="space-between" w="full">
+            <Text color="text.200">Subscribers</Text>
             <Heading fontSize="md">50,000</Heading>
           </HStack>
-          <Stack>
-            <CircularProgress
-              value={98}
-              color="brand.50"
-              size="160px"
-              thickness="14px"
-            >
-              <CircularProgressLabel>
-                <Heading fontSize="3xl">$5</Heading>
-              </CircularProgressLabel>
-            </CircularProgress>
-          </Stack>
+          <HStack justifyContent="space-between" w="full">
+            <Text color="text.200">Website Traffic</Text>
+            <Heading fontSize="md">2500 Daily</Heading>
+          </HStack>
+          <HStack justifyContent="space-between" w="full">
+            <Text color="text.200">Click-through rate</Text>
+            <Stack>
+              <CircularProgress value={98} color="brand.50">
+                <CircularProgressLabel>
+                  <Heading fontSize="nm">735</Heading>
+                </CircularProgressLabel>
+              </CircularProgress>
+            </Stack>
+          </HStack>
         </Stack>
       </Stack>
     </Stack>
