@@ -38,11 +38,9 @@ export const colors = {
     // second color
     100: "#DEDEDE4D",
     // text dark color
-    200: "#17191A",
+    200: "#F6F6F6",
     // text semi dark color
     300: "#006174",
     // subtle main color
-    400: "#CFE8E9",
-    // Creathor grey
   },
 };
