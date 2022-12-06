@@ -30,8 +30,8 @@ const Navbar = () => {
           className={styles.hamburger}
         />
       </header>
-      {isOpen && <NavList handleNav={handleNav} />}
-      {isOpen && <BgOverlay handleBg={handleNav} />}
+      <NavList isOpen={isOpen} handleNav={handleNav} />
+      <BgOverlay isOpen={isOpen} handleBg={handleNav} />
     </>
   );
 };

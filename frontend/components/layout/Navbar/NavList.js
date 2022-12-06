@@ -5,9 +5,9 @@ import styles from "./NavList.module.css";
 
 import close from "../../assets/Close.svg";
 
-const NavList = ({ handleNav }) => {
+const NavList = ({ handleNav, isOpen }) => {
   return (
-    <nav className={styles.navLinks}>
+    <nav className={`${styles.navLinks} ${isOpen && styles.showNavLinks}`}>
       <Image
         src={close}
         alt="close"

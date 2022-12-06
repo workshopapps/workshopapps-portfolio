@@ -14,8 +14,6 @@ export default function Document() {
         rel="stylesheet"
       ></link>
       <body>
-        <div id="modal-overlay" />
-        <div id="bg-overlay" />
         <Main />
         <NextScript />
       </body>
