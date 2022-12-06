@@ -14,7 +14,7 @@ function SalesCard() {
       <Stack
         alignItems="center"
         bg="brand.100"
-        minH="270px"
+        minH="240px"
         w="full"
         padding="20px"
         justifyContent="center"

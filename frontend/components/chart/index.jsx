@@ -69,8 +69,9 @@ export default function Example() {
   const activeItem = data[activeIndex];
 
   return (
-    <div style={{ width: "100%", background: "red" }}>
+    <div style={{ width: "100%" }}>
       <ResponsiveContainer width="100%" height={100}>
+        {/* <CartesianGrid /> */}
         <BarChart width={150} height={40} data={data}>
           <Bar dataKey="uv" onClick={handleClick}>
             {data.map((entry, index) => (
