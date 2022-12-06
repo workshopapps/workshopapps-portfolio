@@ -1,7 +1,7 @@
 import Head from "next/head";
 import SalesCard from "../components/sales-card";
-import { Stack } from "@chakra-ui/react";
-import styles from "../styles/Home.module.css";
+import MarketingCard from "../components/marketing-card";
+import { Stack, HStack } from "@chakra-ui/react";
 
 export default function Dashboard() {
   return (
@@ -11,7 +11,10 @@ export default function Dashboard() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Stack px={20}>
-        <SalesCard />
+        <HStack>
+          <SalesCard />
+          <MarketingCard />
+        </HStack>
       </Stack>
     </div>
   );
