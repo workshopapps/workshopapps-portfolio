@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Text, HStack } from "@chakra-ui/react";
+import { Stack, Text, HStack, Heading } from "@chakra-ui/react";
 
 const sections = [
   { field: "Investment", value: "$1.7 Billion" },
@@ -8,7 +8,7 @@ const sections = [
   { field: "Conversion Rate", value: "61%" },
 ];
 
-const Section = ({ field = "investment" }) => (
+const Section = ({ field, value }) => (
   <Stack spacing={6} textAlign="center">
     <Text color="text.200" fontSize="20px">
       {field}
@@ -21,10 +21,17 @@ const Section = ({ field = "investment" }) => (
 
 function DashboardHeader() {
   return (
-    <Stack py={10} px="90px" bg="brand.200">
-      DashboardHeader
+    <Stack w="full" textAlign="center" spacing="60px">
+      <Heading>OUR PORTFOLIO</Heading>
+      <Stack py={10} px="90px" bg="brand.200">
+        <HStack w="full" justifyContent="space-between" rounded="6">
+          {sections.map((item) => (
+            <Section key={item.field} {...item} />
+          ))}
+        </HStack>
+      </Stack>
     </Stack>
   );
 }
 
-export default DashboardHedaader;
+export default DashboardHeader;
