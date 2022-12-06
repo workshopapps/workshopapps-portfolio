@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Box, Stack, Text, Button, ButtonGroup } from "@chakra-ui/react";
@@ -37,7 +37,6 @@ const Homepage = () => {
         </Text>
       </Box>
 
-      {/* <Image src={bulb} alt="bulb" className={styles.bulb} /> */}
       <BulbIcon />
 
       <Link href="/dashboard">
