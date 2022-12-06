@@ -8,6 +8,7 @@ const btnProps = {
   variant: "ghost",
   outline: "none",
   bg: "transparent",
+  position: "relative",
   zIndex: "3",
   size: "md",
   fontWeight: "normal",
@@ -26,27 +27,27 @@ const Slide = () => (
     w="full"
     h="full"
     bg="#fff"
-    transformOrigin="center"
     zIndex={-1}
     layoutId="underline"
   />
 );
 
-const btnFields = [
-  { text: "Cohort 1 - ", subText: "2022", state: "2022" },
-  { text: "Cohort 2 - ", subText: "2023", state: "2023" },
-];
 function CohortToggler() {
   const [cohort, setCohort] = React.useState("2022");
   return (
-    <HStack w="fit-content" bg="brand.200" p={1} rounded={6} spacing={0}>
-      {btnFields.map((btn) => (
-        <Button {...btnProps} onClick={() => setCohort(btn.state)}>
-          {btn.text}
-          <Text fontWeight="bold">{btn.subText}</Text>
-          {cohort === btn.state ? <Slide /> : null}
-        </Button>
-      ))}
+    <HStack w="fit-content" bg="brand.200" p={1} rounded={6}>
+      <Button {...btnProps} onClick={() => setCohort("2022")}>
+        Cohort 1 - <Text fontWeight="bold">2022</Text>
+        {cohort === "2022" ? <Slide /> : null}
+      </Button>
+      <Button
+        rightIcon={<Icon iconComp={FiLock} boxSize={5} />}
+        {...btnProps}
+        onClick={() => setCohort("2023")}
+      >
+        Cohort 2 - <Text fontWeight="bold">2023</Text>
+        {cohort === "2023" ? <Slide /> : null}
+      </Button>
     </HStack>
   );
 }

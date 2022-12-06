@@ -4,6 +4,7 @@ import MarketingCard from "../components/marketing-card";
 import { Stack, HStack } from "@chakra-ui/react";
 import ProductCard from "../components/product-card";
 import CohortToggler from "../components/cohort-toggler";
+import DashboardHedaader from "../components/dashboard-header";
 
 export default function Dashboard() {
   return (
@@ -12,12 +13,13 @@ export default function Dashboard() {
         <title>Workshop Apps | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Stack p={20}>
+      <Stack p={20} spacing="60px">
+        <DashboardHedaader />
         <CohortToggler />
         <HStack>
-          <SalesCard />
-          <MarketingCard />
           <ProductCard />
+          <MarketingCard />
+          <SalesCard />
         </HStack>
       </Stack>
     </div>
