@@ -10,7 +10,7 @@ function ProductCard() {
       <Stack
         alignItems="center"
         bg="brand.100"
-        minH="230px"
+        minH="250px"
         w="full"
         rounded="8px"
         padding="20px"

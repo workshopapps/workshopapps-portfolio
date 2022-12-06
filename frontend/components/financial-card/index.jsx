@@ -1,5 +1,6 @@
 import React from "react";
 import { Stack, Text, Heading, HStack } from "@chakra-ui/react";
+import Chart from "../chart";
 
 function FinancialCard() {
   return (
@@ -8,7 +9,7 @@ function FinancialCard() {
       <Stack
         alignItems="center"
         bg="brand.100"
-        minH="230px"
+        minH="250px"
         w="full"
         rounded="8px"
         padding="20px"
@@ -29,6 +30,9 @@ function FinancialCard() {
               <Heading fontSize="24px">$700,000</Heading>
             </Stack>
           </HStack>
+          <Stack>
+            <Chart />
+          </Stack>
         </Stack>
       </Stack>
     </Stack>
