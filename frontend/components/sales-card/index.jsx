@@ -24,7 +24,7 @@ function SalesCard() {
           <Text textAlign="center">Cost of selling</Text>
           <Stack>
             <CircularProgress
-              value={98}
+              value={99}
               color="brand.50"
               size="140px"
               thickness="14px"
