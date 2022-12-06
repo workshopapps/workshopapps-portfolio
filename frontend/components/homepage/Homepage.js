@@ -11,7 +11,7 @@ import styles from "./Homepage.module.css";
 const Homepage = () => {
   return (
     <Box
-      pt={14}
+      pt={16}
       pb={14}
       display="flex"
       flexDirection="column"
@@ -34,7 +34,7 @@ const Homepage = () => {
           display="flex"
           alignItems="center"
           flexDirection="column"
-          gap="20px"
+          gap="30px"
         >
           <div className={styles.button}>
             <p className={styles.buttonText}>Our Portfolio</p>
