@@ -23,7 +23,7 @@ function DashboardHeader() {
   return (
     <Stack w="full" textAlign="center" spacing="60px">
       <Heading>OUR PORTFOLIO</Heading>
-      <Stack py={10} px="90px" bg="brand.200">
+      <Stack py={10} px="90px" bg="brand.200" rounded="10">
         <HStack w="full" justifyContent="space-between" rounded="6">
           {sections.map((item) => (
             <Section key={item.field} {...item} />

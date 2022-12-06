@@ -13,13 +13,13 @@ export default function Dashboard() {
         <title>Workshop Apps | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Stack p={20}>
+      <Stack p={20} spacing="60px">
         <DashboardHedaader />
         <CohortToggler />
         <HStack>
-          <SalesCard />
-          <MarketingCard />
           <ProductCard />
+          <MarketingCard />
+          <SalesCard />
         </HStack>
       </Stack>
     </div>
