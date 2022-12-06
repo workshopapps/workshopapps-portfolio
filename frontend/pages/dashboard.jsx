@@ -6,6 +6,7 @@ import ProductCard from "../components/product-card";
 import CohortToggler from "../components/cohort-toggler";
 import DashboardHedaader from "../components/dashboard-header";
 import CustomSelect, { months, sortTypes } from "../components/custom-select";
+import FinancialCard from "../components/financial-card";
 
 export default function Dashboard() {
   return (
@@ -25,6 +26,7 @@ export default function Dashboard() {
         </HStack>
         <HStack>
           <ProductCard />
+          <FinancialCard />
           <MarketingCard />
           <SalesCard />
         </HStack>
