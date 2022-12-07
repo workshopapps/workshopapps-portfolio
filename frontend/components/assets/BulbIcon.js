@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Bulb.module.css";
 
 const BulbIcon = () => {
+  const [playBulb, setPlayBulb] = useState(false);
+
   return (
     <svg
-      width="700"
-      height="675"
       viewBox="0 0 700 675"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       onClick={() => {
-        alert("yeah");
+        setPlayBulb(!playBulb);
       }}
+      className={styles.bulbIcon}
     >
       <g clipPath="url(#clip0_0_1)">
         <path
@@ -20,16 +21,14 @@ const BulbIcon = () => {
           fill="#292D32"
         />
 
-        {/* window top  10, 11, 20, 23, 30, 31, 35, 38, 41, 47, 57, 59, 62, 63, 68, 73, 78, 84, 89, 92, 95, 100, 102, 112, 118, 126, 135, 139, 141, 156 */}
+        {/* window top */}
         <path
           d="M153.782 495.54H145.317V505.462H153.782V495.54Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M164.448 495.54H155.983V505.462H164.448V495.54Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M153.782 508.217H145.317V518.14H153.782V508.217Z"
@@ -61,8 +60,7 @@ const BulbIcon = () => {
         />
         <path
           d="M164.448 546.234H155.983V556.157H164.448V546.234Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M153.782 558.912H145.317V568.834H153.782V558.912Z"
@@ -74,8 +72,7 @@ const BulbIcon = () => {
         />
         <path
           d="M164.448 571.589H155.983V581.512H164.448V571.589Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M153.782 584.267H145.317V594.189H153.782V584.267Z"
@@ -87,8 +84,7 @@ const BulbIcon = () => {
         />
         <path
           d="M153.782 596.945H145.317V606.867H153.782V596.945Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M164.448 596.945H155.983V606.867H164.448V596.945Z"
@@ -96,18 +92,15 @@ const BulbIcon = () => {
         />
         <path
           d="M175.101 546.234H166.636V556.157H175.101V546.234Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M175.101 558.912H166.636V568.834H175.101V558.912Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M175.101 571.589H166.636V581.512H175.101V571.589Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M175.101 596.945H166.636V606.867H175.101V596.945Z"
@@ -127,8 +120,7 @@ const BulbIcon = () => {
         />
         <path
           d="M143.116 571.589H134.651V581.512H143.116V571.589Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M210.102 543.176H203.322V553.099H210.102V543.176Z"
@@ -144,8 +136,7 @@ const BulbIcon = () => {
         />
         <path
           d="M210.102 580.747H203.322V590.669H210.102V580.747Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M210.102 593.265H203.322V603.188H210.102V593.265Z"
@@ -157,8 +148,7 @@ const BulbIcon = () => {
         />
         <path
           d="M201.216 555.774H194.436V565.697H201.216V555.774Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M201.216 568.293H194.436V578.215H201.216V568.293Z"
@@ -182,8 +172,7 @@ const BulbIcon = () => {
         />
         <path
           d="M104.391 544.562H97.611V554.484H104.391V544.562Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path d="M104.391 557.24H97.611V567.162H104.391V557.24Z" fill="white" />
         <path
@@ -220,8 +209,7 @@ const BulbIcon = () => {
         />
         <path
           d="M259.765 551.076H252.373V560.998H259.765V551.076Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M269.072 551.076H261.68V560.998H269.072V551.076Z"
@@ -229,8 +217,7 @@ const BulbIcon = () => {
         />
         <path
           d="M259.765 563.578H252.373V573.501H259.765V563.578Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M269.072 563.578H261.68V573.501H269.072V563.578Z"
@@ -242,13 +229,11 @@ const BulbIcon = () => {
         />
         <path
           d="M269.072 576.081H261.68V586.003H269.072V576.081Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M259.765 588.583H252.373V598.505H259.765V588.583Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M269.072 588.583H261.68V598.505H269.072V588.583Z"
@@ -268,8 +253,7 @@ const BulbIcon = () => {
         />
         <path
           d="M269.072 613.588H261.68V623.51H269.072V613.588Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M250.471 551.076H243.079V560.998H250.471V551.076Z"
@@ -289,8 +273,7 @@ const BulbIcon = () => {
         />
         <path
           d="M321.819 582.547H313.354V592.469H321.819V582.547Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M332.485 582.547H324.02V592.469H332.485V582.547Z"
@@ -310,8 +293,7 @@ const BulbIcon = () => {
         />
         <path
           d="M332.485 607.424H324.02V617.347H332.485V607.424Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M321.819 619.847H313.354V629.769H321.819V619.847Z"
@@ -335,8 +317,7 @@ const BulbIcon = () => {
         />
         <path
           d="M311.166 582.547H302.701V592.469H311.166V582.547Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M311.166 594.986H302.701V604.908H311.166V594.986Z"
@@ -356,8 +337,7 @@ const BulbIcon = () => {
         />
         <path
           d="M485.943 558.944H477.478V568.866H485.943V558.944Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M496.609 558.944H488.144V568.866H496.609V558.944Z"
@@ -369,8 +349,7 @@ const BulbIcon = () => {
         />
         <path
           d="M496.609 571.637H488.144V581.559H496.609V571.637Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M485.943 584.347H477.478V594.269H485.943V584.347Z"
@@ -382,8 +361,7 @@ const BulbIcon = () => {
         />
         <path
           d="M485.943 597.056H477.478V606.978H485.943V597.056Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M496.609 597.056H488.144V606.978H496.609V597.056Z"
@@ -403,8 +381,7 @@ const BulbIcon = () => {
         />
         <path
           d="M545.076 529.097H536.611V539.019H545.076V529.097Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M555.742 529.097H547.277V539.019H555.742V529.097Z"
@@ -412,8 +389,7 @@ const BulbIcon = () => {
         />
         <path
           d="M545.076 541.807H536.611V551.729H545.076V541.807Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M555.742 541.807H547.277V551.729H555.742V541.807Z"
@@ -447,8 +423,7 @@ const BulbIcon = () => {
         />
         <path
           d="M566.395 554.5H557.93V564.422H566.395V554.5Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path d="M566.395 567.21H557.93V577.132H566.395V567.21Z" fill="white" />
         <path
@@ -469,8 +444,7 @@ const BulbIcon = () => {
         />
         <path
           d="M604.603 548.321H597.496V558.243H604.603V548.321Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M595.295 560.998H588.189V570.92H595.295V560.998Z"
@@ -502,8 +476,7 @@ const BulbIcon = () => {
         />
         <path
           d="M475.29 558.944H466.825V568.866H475.29V558.944Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M475.29 571.637H466.825V581.559H475.29V571.637Z"
@@ -519,8 +492,7 @@ const BulbIcon = () => {
         />
         <path
           d="M411.864 584.171H403.398V594.094H411.864V584.171Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M401.496 584.171H393.031V594.094H401.496V584.171Z"
@@ -540,8 +512,7 @@ const BulbIcon = () => {
         />
         <path
           d="M443.006 584.171H434.541V594.094H443.006V584.171Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M422.244 596.817H413.779V606.74H422.244V596.817Z"
@@ -557,8 +528,7 @@ const BulbIcon = () => {
         />
         <path
           d="M391.115 596.817H382.65V606.74H391.115V596.817Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M380.734 596.817H372.269V606.74H380.734V596.817Z"
@@ -566,8 +536,7 @@ const BulbIcon = () => {
         />
         <path
           d="M432.625 596.817H424.16V606.74H432.625V596.817Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M443.006 596.817H434.541V606.74H443.006V596.817Z"
@@ -627,8 +596,7 @@ const BulbIcon = () => {
         />
         <path
           d="M380.734 571.526H372.269V581.448H380.734V571.526Z"
-          fill="orange"
-          className={styles.windows}
+          className={playBulb && styles.windows}
         />
         <path
           d="M432.625 571.526H424.16V581.448H432.625V571.526Z"
@@ -701,473 +669,357 @@ const BulbIcon = () => {
         {/* <!-- brightness outline --> */}
         <path
           d="M355.376 108.712C355.376 106.99 355.376 105.268 355.306 103.546"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M355.306 160.204C355.465 149.629 355.53 139.055 355.502 128.48"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M355.306 188.316V179.356"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M427.406 122.712C428.806 119.618 430.206 116.538 431.732 113.5"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M407.246 170.62C413 158.16 417.844 145.322 423.122 132.666"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M395.864 197.178C398.337 191.391 400.811 185.619 403.284 179.86"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M385.616 188.316L400.568 135.186"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M299.754 145.49C304.85 161.394 309.176 177.592 314.328 193.244"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M289.996 113.5C292.283 120.967 294.56 128.433 296.828 135.9"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M301.98 192.516L304.08 197.178"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M287.434 160.204L298.046 183.766"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M227.696 217.086C233.1 223.33 238.462 229.616 243.684 236.028"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M203.56 188.54C209.16 195.638 215.138 202.54 221.074 209.428"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M192.444 175.408L196.644 180.434"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M206.318 216.106L234.92 243.714"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M209.356 306.798L218.064 309.024"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M147.07 290.88L200.536 304.6"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M131.18 286.82L136.962 288.304"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M197.722 288.724L218.064 297.922"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M174.622 278.294L188.622 284.622"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M529.424 181.582L532.91 178.698"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M513.184 195.05L521.304 188.316"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M479.766 222.742L505.106 201.742"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M459.046 239.906L472.094 229.098"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M462.042 175.408L433.86 214.258"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M573.748 264.77L579.866 262.922"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M516.796 282.018C532.742 277.356 548.744 272.876 564.494 267.584"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M488.502 290.67C494.606 288.668 500.752 286.778 506.912 284.93"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M491.918 306.042L543.998 299.238"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M567 396.44L574.756 398.932"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M490.21 371.8C513.128 378.282 534.702 386.906 557.648 393.416"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M525.826 367.6L556.388 371.8"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M491.918 362.84L515.48 366.2"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M513.898 491.514L517.832 496.428"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M459.046 422.928C475.356 443.046 491.54 463.528 508.046 484.15"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M483.154 433.862C487.886 438.473 492.613 443.083 497.336 447.694"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M465.458 416.6L477.246 428.094"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M211.568 492.27L208.46 496.554"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M230.748 466.006C226.352 472.18 221.9 478.326 217.322 484.374"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M257.6 429.102C250.334 438.44 243.474 448.1 236.6 457.76"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M232.512 436.62L216.566 450.956"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M249.004 421.794L239.582 430.264"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M167.132 402.922L148.694 412.12"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M222.6 375.3C207.788 382.622 191.604 390.168 175.98 398.54"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M218.064 352.886L177.716 359.928"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M473.536 262.922L497.336 248.404"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M255.836 191.2L270.354 214.258"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M446.236 458.404L455.21 477.5"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M438.564 442.038C439.81 444.698 441.07 447.372 442.316 450.046"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M522.312 411.07L527.352 414.038"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M485.436 389.3L513.716 405.988"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M554.47 340.398H567.91"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M495.978 340.398C512.05 340.538 528.178 340.538 544.88 340.398"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M154 341L129.486 341.406"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M201.768 340.286C188.818 340.552 175.868 340.608 162.904 340.776"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M216.566 339.894L211.33 340.062"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M193.2 240.368L173.054 227.446"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
         <path
           d="M228.382 262.922L201.964 245.996"
-          stroke="#263238"
-          stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.brightnessOutline}
+          className={playBulb && styles.brightnessOutline}
         />
 
         {/* <!-- big bulb --> */}
         <path
           d="M350.602 208.784C284.956 209.708 231.602 263.538 231.126 329.184C230.986 347.431 234.976 365.474 242.797 381.96C250.619 398.447 262.069 412.95 276.29 424.384C281.252 428.45 284.929 433.867 286.874 439.98L292.474 457.298H412.146L417.872 439.63C419.78 433.696 423.369 428.444 428.204 424.51C447.886 408.704 462.142 387.146 468.981 362.847C475.82 338.547 474.901 312.719 466.352 288.967C457.804 265.215 442.052 244.725 421.295 230.358C400.539 215.991 375.815 208.463 350.574 208.826L350.602 208.784Z"
-          className={styles.bigBulb}
+          className={playBulb && styles.bigBulb}
         />
 
         {/* <!-- bulb inner outline 249, 250--> */}
@@ -1177,7 +1029,7 @@ const BulbIcon = () => {
           stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.innerOutline}
+          className={playBulb && styles.innerOutline}
         />
         <path
           d="M319.9 410.188C321.398 421.192 322.154 431.258 322.532 438.762"
@@ -1185,7 +1037,7 @@ const BulbIcon = () => {
           stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.innerOutline}
+          className={playBulb && styles.innerOutline}
         />
         <path
           d="M309.106 348.658H300.594C309.4 362 314.72 380.382 317.94 397.966"
@@ -1193,7 +1045,7 @@ const BulbIcon = () => {
           stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.innerOutline}
+          className={playBulb && styles.innerOutline}
         />
         <path
           d="M326.046 345.172L325.052 348.658H311.976"
@@ -1201,7 +1053,7 @@ const BulbIcon = () => {
           stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.innerOutline1}
+          className={playBulb && styles.innerOutline1}
         />
         <path
           d="M335.398 355.07L334.264 358.906L327.726 339.264L326.69 342.89"
@@ -1209,7 +1061,7 @@ const BulbIcon = () => {
           stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.innerOutline1}
+          className={playBulb && styles.innerOutline1}
         />
         <path
           d="M348.908 350.436L346.318 358.906L340.032 339.264L336.658 350.772"
@@ -1217,7 +1069,7 @@ const BulbIcon = () => {
           stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.innerOutline1}
+          className={playBulb && styles.innerOutline1}
         />
         <path
           d="M367.262 348.21L364.644 339.264L358.358 358.906L352.338 339.264L350.574 345.018"
@@ -1225,7 +1077,7 @@ const BulbIcon = () => {
           stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.innerOutline1}
+          className={playBulb && styles.innerOutline1}
         />
         <path
           d="M383.488 348.658H379.61L376.95 339.264L370.398 358.906L368.34 351.864"
@@ -1233,7 +1085,7 @@ const BulbIcon = () => {
           stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.innerOutline1}
+          className={playBulb && styles.innerOutline1}
         />
         <path
           d="M388.57 388.894C391.874 374.236 396.774 359.704 404.068 348.658H387.548"
@@ -1241,7 +1093,7 @@ const BulbIcon = () => {
           stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.innerOutline2}
+          className={playBulb && styles.innerOutline2}
         />
         <path
           d="M385 408.368C385.672 403.65 386.498 398.764 387.478 393.864"
@@ -1249,7 +1101,7 @@ const BulbIcon = () => {
           stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.innerOutline2}
+          className={playBulb && styles.innerOutline2}
         />
         <path
           d="M382.578 431.468C382.928 426.54 383.432 420.982 384.146 415.046"
@@ -1257,7 +1109,7 @@ const BulbIcon = () => {
           stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.innerOutline1}
+          className={playBulb && styles.innerOutline1}
         />
         <path
           d="M381.99 442.038C381.99 440.75 382.116 439.35 382.186 437.838"
@@ -1265,7 +1117,7 @@ const BulbIcon = () => {
           stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.innerOutline1}
+          className={playBulb && styles.innerOutline1}
         />
         <path
           d="M381.78 452.034C381.78 452.034 381.78 449.738 381.864 445.776"
@@ -1273,14 +1125,15 @@ const BulbIcon = () => {
           stroke-width="1.4"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className={styles.innerOutline1}
+          className={playBulb && styles.innerOutline1}
         />
 
         {/* <!-- inner light grey --> */}
         <path
-          opacity="1"
+          fill="#263238"
+          opacity="0.2"
           d="M350.602 208.784C284.956 209.708 231.602 263.538 231.126 329.184C230.986 347.431 234.976 365.474 242.797 381.96C250.619 398.447 262.069 412.95 276.29 424.384C281.252 428.45 284.929 433.867 286.874 439.98L292.474 457.298H412.146L417.872 439.63C419.78 433.696 423.369 428.444 428.204 424.51C447.886 408.704 462.142 387.146 468.981 362.847C475.82 338.547 474.901 312.719 466.352 288.967C457.804 265.215 442.052 244.725 421.295 230.358C400.539 215.991 375.815 208.463 350.574 208.826L350.602 208.784ZM352.338 407.164C333.984 407.167 316.041 401.726 300.779 391.531C285.517 381.335 273.621 366.842 266.597 349.885C259.572 332.928 257.734 314.269 261.315 296.267C264.896 278.266 273.736 261.731 286.715 248.753C299.695 235.776 316.231 226.939 334.233 223.361C352.235 219.782 370.894 221.623 387.85 228.65C404.806 235.677 419.297 247.575 429.49 262.838C439.684 278.102 445.122 296.046 445.116 314.4C445.112 339.004 435.336 362.599 417.937 379.995C400.538 397.391 376.942 407.164 352.338 407.164V407.164Z"
-          className={styles.innerGreyLight}
+          className={playBulb && styles.innerGreyLight}
         />
 
         {/* <!-- bulb outline --> */}
