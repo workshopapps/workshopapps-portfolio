@@ -7,7 +7,14 @@ import ProductCard from "../product-card";
 import SalesCard from "../sales-card";
 import { BsFillCaretUpFill, BsCaretDownFill } from "react-icons/bs";
 
-function ProductContainer({ isFirst = false, loss = false, name, img }) {
+function ProductContainer({
+  isFirst = false,
+  loss = false,
+  name,
+  img,
+  desc,
+  num,
+}) {
   return (
     <HStack position="relative">
       <Box position="absolute" top={isFirst ? 14 : 10} left={-12}>
@@ -23,10 +30,10 @@ function ProductContainer({ isFirst = false, loss = false, name, img }) {
               <Icon iconComp={BsCaretDownFill} boxSize={4} color="inherit" />
             </Stack>
           )}
-          <Heading fontSize="xl">01</Heading>
+          <Heading fontSize="lg">0{num}</Heading>
         </HStack>
       </Box>
-      <ProductCard isFirst={isFirst} name={name} img={img} />
+      <ProductCard isFirst={isFirst} name={name} img={img} desc={desc} />
       <FinancialCard isFirst={isFirst} />
       <MarketingCard isFirst={isFirst} />
       <SalesCard isFirst={isFirst} />

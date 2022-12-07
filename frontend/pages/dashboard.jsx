@@ -5,10 +5,13 @@ import DashboardHedaader from "../components/dashboard-header";
 import CustomSelect, { months, sortTypes } from "../components/custom-select";
 import ProductContainer from "../components/product-container";
 import coverlyImg from "../public/images/coverly.svg";
-import gritImg from "../public/images/coverly.svg";
+import gritImg from "../public/images/grit.svg";
 import soberpalImg from "../public/images/soberpal.svg";
 import kitchenImg from "../public/images/kitchen.svg";
 import streetrateImg from "../public/images/streetrate.svg";
+import arenaImg from "../public/images/arena.svg";
+import descriptoImg from "../public/images/descripto.svg";
+import devaskImg from "../public/images/devask.svg";
 
 const products = [
   {
@@ -41,6 +44,24 @@ const products = [
     loss: false,
     desc: "An application that revises grammar problems through discussions with a chat bot that uses AI to transcribe user input",
   },
+  {
+    name: "V-Arena",
+    img: arenaImg,
+    loss: false,
+    desc: "An application that revises grammar problems through discussions with a chat bot that uses AI to transcribe user input",
+  },
+  {
+    name: "Discripto",
+    img: descriptoImg,
+    loss: false,
+    desc: "An application that revises grammar problems through discussions with a chat bot that uses AI to transcribe user input",
+  },
+  {
+    name: "Devask",
+    img: devaskImg,
+    loss: true,
+    desc: "An application that revises grammar problems through discussions with a chat bot that uses AI to transcribe user input",
+  },
 ];
 
 export default function Dashboard() {
@@ -64,6 +85,7 @@ export default function Dashboard() {
             <ProductContainer
               key={product.name}
               isFirst={i === 0}
+              num={i + 1}
               {...product}
             />
           ))}
