@@ -1,0 +1,32 @@
+.contact__text_input,
+.contact__text_message {
+  padding: 10px;
+  border: 1px solid rgba(41, 45, 50, 0.17);
+  border-radius: 4px;
+}
+
+.contact__text_message {
+  resize: none;
+}
+
+.contact__submit__btn {
+  background: #292d32;
+  border: 6px solid rgb(210, 208, 208);
+  color: #ffffff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.contact__submit__btn:hover {
+  opacity: 0.8;
+  transition: all 0.5s ease-in-out;
+}
+
+/* @media screen and (max-width: 767px) {
+  .contact__container {
+    margin-top: 3rem;
+  }
+} */
