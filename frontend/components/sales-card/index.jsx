@@ -7,10 +7,10 @@ import {
   Heading,
 } from "@chakra-ui/react";
 
-function SalesCard() {
+function SalesCard({ isFirst }) {
   return (
     <Stack spacing={3} w="full" maxW="330px">
-      <Heading fontSize="md">Sales</Heading>
+      {isFirst && <Heading fontSize="md">Sales</Heading>}
       <Stack
         alignItems="center"
         bg="brand.100"

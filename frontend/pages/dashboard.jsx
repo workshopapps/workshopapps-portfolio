@@ -1,18 +1,15 @@
 import Head from "next/head";
-import SalesCard from "../components/sales-card";
-import MarketingCard from "../components/marketing-card";
 import { Stack, HStack } from "@chakra-ui/react";
-import ProductCard from "../components/product-card";
 import CohortToggler from "../components/cohort-toggler";
 import DashboardHedaader from "../components/dashboard-header";
 import CustomSelect, { months, sortTypes } from "../components/custom-select";
-import FinancialCard from "../components/financial-card";
+import ProductContainer from "../components/product-container";
 
 export default function Dashboard() {
   return (
     <div>
       <Head>
-        <title>Workshop Apps | Home</title>
+        <title>Workshop Apps | Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Stack p={20} spacing="60px">
@@ -24,12 +21,15 @@ export default function Dashboard() {
             <CustomSelect type="Sort" options={sortTypes} />
           </HStack>
         </HStack>
-        <HStack>
-          <ProductCard />
-          <FinancialCard />
-          <MarketingCard />
-          <SalesCard />
-        </HStack>
+        <Stack w="full" spacing={12}>
+          <ProductContainer isFirst />
+          <ProductContainer />
+          <ProductContainer />
+          <ProductContainer />
+          <ProductContainer />
+          <ProductContainer />
+          <ProductContainer />
+        </Stack>
       </Stack>
     </div>
   );

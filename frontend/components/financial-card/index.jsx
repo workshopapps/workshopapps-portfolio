@@ -2,10 +2,10 @@ import React from "react";
 import { Stack, Text, Heading, HStack } from "@chakra-ui/react";
 import Chart from "../chart";
 
-function FinancialCard() {
+function FinancialCard({ isFirst }) {
   return (
     <Stack spacing={3} w="full" maxW="330px">
-      <Heading fontSize="md">Financials</Heading>
+      {isFirst && <Heading fontSize="md">Financials</Heading>}
       <Stack
         alignItems="center"
         bg="brand.100"

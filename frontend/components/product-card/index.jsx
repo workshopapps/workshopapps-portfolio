@@ -3,10 +3,10 @@ import { Stack, Text, Heading, HStack, Box } from "@chakra-ui/react";
 import Image from "next/image";
 import gritLogo from "../../public/images/grit.svg";
 
-function ProductCard() {
+function ProductCard({ isFirst }) {
   return (
     <Stack spacing={3} w="full" maxW="330px">
-      <Heading fontSize="md">Product</Heading>
+      {isFirst && <Heading fontSize="md">Product</Heading>}
       <Stack
         alignItems="center"
         bg="brand.100"
