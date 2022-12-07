@@ -5,17 +5,24 @@ import Icon from "../icon";
 import MarketingCard from "../marketing-card";
 import ProductCard from "../product-card";
 import SalesCard from "../sales-card";
-import { BsFillCaretUpFill } from "react-icons/bs";
+import { BsFillCaretUpFill, BsCaretDownFill } from "react-icons/bs";
 
-function ProductContainer({ isFirst = false }) {
+function ProductContainer({ isFirst = false, loss = false }) {
   return (
     <HStack position="relative">
       <Box position="absolute" top={isFirst ? 14 : 10} left={-12}>
         <HStack spacing={2}>
-          <Stack spacing={0}>
-            <Icon iconComp={BsFillCaretUpFill} boxSize={4} color="inherit" />
-            <Heading fontSize="sm">01</Heading>
-          </Stack>
+          {!loss ? (
+            <Stack spacing={0} color="brand.500">
+              <Icon iconComp={BsFillCaretUpFill} boxSize={4} color="inherit" />
+              <Heading fontSize="sm">+1</Heading>
+            </Stack>
+          ) : (
+            <Stack spacing={0} color="brand.600">
+              <Heading fontSize="sm">-1</Heading>
+              <Icon iconComp={BsCaretDownFill} boxSize={4} color="inherit" />
+            </Stack>
+          )}
           <Heading fontSize="xl">01</Heading>
         </HStack>
       </Box>
