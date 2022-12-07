@@ -44,6 +44,7 @@ export const colors = {
     400: "#F5F5F5",
     500: "#26C82D",
     600: "#EF2323",
+    700: "#00000099",
     // subtle main color
   },
 };
