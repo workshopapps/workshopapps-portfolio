@@ -69,7 +69,6 @@ export default function Dashboard() {
     <div>
       <Head>
         <title>Workshop Apps | Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Stack p={20} spacing="60px">
         <DashboardHedaader />
