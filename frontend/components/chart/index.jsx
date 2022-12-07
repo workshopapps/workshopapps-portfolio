@@ -1,5 +1,4 @@
-import { background } from "@chakra-ui/react";
-import React, { PureComponent } from "react";
+import React from "react";
 import {
   BarChart,
   Bar,
@@ -12,7 +11,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-export default function Example() {
+export default function CustomBarChart() {
   const [state, setState] = React.useState({
     data: [
       {
