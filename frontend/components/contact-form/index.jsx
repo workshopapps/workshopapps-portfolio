@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Image from "next/image";
-import sendEmailIcon from "../assets/Email-Send.svg";
+import sendEmailIcon from "../../public/assets/Email-Send.svg";
 import styles from "../../styles/Contact.module.css";
 import { Stack, Text, Box, FormLabel } from "@chakra-ui/react";
 import { Formik, useFormik} from "formik";

@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import facebookIcon from "../assets/facebook.svg";
-import twitterIcon from "../assets/twitter.svg";
-import linkedInIcon from "../assets/linkedin.svg";
-import instagramIcon from "../assets/instagram.svg";
+import facebookIcon from "../../public/assets/facebook.svg";
+import twitterIcon from "../../public/assets/twitter.svg";
+import linkedInIcon from "../../public/assets/linkedin.svg";
+import instagramIcon from "../../public/assets/instagram.svg";
 import { Stack, Text, Box, HStack} from "@chakra-ui/react";
 // import styles from "../../styles/Contact.module.css"
 
