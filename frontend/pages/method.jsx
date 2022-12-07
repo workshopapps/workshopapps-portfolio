@@ -5,7 +5,7 @@ export default function Method() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Workshop Apps | Method </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       Method Page

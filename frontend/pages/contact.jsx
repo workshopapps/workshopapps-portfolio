@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Workshop Apps | Contact</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section>

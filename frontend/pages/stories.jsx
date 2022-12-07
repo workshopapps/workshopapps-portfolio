@@ -5,7 +5,7 @@ export default function Stories() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Workshop Apps | Stories</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       Stories Page

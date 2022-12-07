@@ -11,7 +11,7 @@ export default function About() {
   return (
     <div>
       <Head>
-        <title>Workshop Apps | About </title>
+        <title>Workshop Apps | About</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className={style.main__container}>

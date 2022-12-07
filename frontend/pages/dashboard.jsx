@@ -12,7 +12,7 @@ export default function Dashboard() {
   return (
     <div>
       <Head>
-        <title>Workshop Apps | Home</title>
+        <title>Workshop Apps | Dashboard</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Stack p={20} spacing="60px">
