@@ -10,7 +10,7 @@ import { Stack, Text, Box, HStack} from "@chakra-ui/react";
 
 function ContactInfo() {
   return (
-    <Stack w="full" textAlign="left" spacing="20px" marginBottom="3rem">  
+    <Stack w="full" textAlign="left" spacing="20px" marginTop="1.3rem" marginBottom="3rem">  
       <Text
           fontSize={{ base: "2xl", md: "3xl" }}
           textAlign="left"
