@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../../assets/WorkshopAppLogo";
-import HamburgerIcon from "../../assets/HamburgerIcon.svg";
-
+import Logo from "../../../public/assets/WorkshopAppLogo";
+import HamburgerIcon from "../../../public/assets/HamburgerIcon.svg";
 import styles from "./Navbar.module.css";
-
 import BgOverlay from "../../UI/BgOverlay";
 import NavList from "./NavList";
 

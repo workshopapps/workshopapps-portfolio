@@ -2,8 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./NavList.module.css";
-
-import close from "../../assets/Close.svg";
+import close from "../../../public/assets/Close.svg";
 
 const NavList = ({ handleNav, isOpen }) => {
   return (

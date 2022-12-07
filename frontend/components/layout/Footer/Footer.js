@@ -1,19 +1,20 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../assets/WorkshopAppsFooterLogo.svg";
-import facebookIcon from "../../assets/FacebookIcon.svg";
-import twitterIcon from "../../assets/TwitterIcon.svg";
-import youtubeIcon from "../../assets/YoutubeIcon.svg";
-import linkedInIcon from "../../assets/LinkedInIcon.svg";
-import instagramIcon from "../../assets/InstagramIcon.svg";
-
+import WorkshopAppsFooterLogo from "../../../public/assets/WorkshopAppsFooterLogo.js";
+import facebookIcon from "../../../public/assets/FacebookIcon.svg";
+import twitterIcon from "../../../public/assets/TwitterIcon.svg";
+import youtubeIcon from "../../../public/assets/YoutubeIcon.svg";
+import linkedInIcon from "../../../public/assets/LinkedInIcon.svg";
+import instagramIcon from "../../../public/assets/InstagramIcon.svg";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <Image src={logo} alt="logo" className={styles.footerIcon} />
+      <Link href="/" className={styles.logo}>
+        <WorkshopAppsFooterLogo />
+      </Link>
 
       <div className={styles.footerIcons}>
         <a
@@ -56,7 +57,6 @@ const Footer = () => {
           <Image src={instagramIcon} alt="instagram" />
         </a>
       </div>
-
       <ul className={styles.footerLinks}>
         <li className={styles.link}>
           <Link href="/">Home</Link>

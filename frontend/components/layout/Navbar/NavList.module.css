@@ -34,6 +34,11 @@
   font-size: 20px;
 }
 
+.link:hover {
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
 .close {
   position: absolute;
   top: 25px;
