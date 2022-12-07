@@ -1,7 +1,7 @@
 import React from "react";
 import { HStack, Select, Text } from "@chakra-ui/react";
 
-function CustomSelect({ options, type = "Month", placeholder = "December" }) {
+function CustomSelect({ options, type = "Month" }) {
   const [value, setValue] = React.useState(options ? options[0].value : "");
 
   return (
@@ -17,7 +17,6 @@ function CustomSelect({ options, type = "Month", placeholder = "December" }) {
     >
       <Text color="text.200">{type}:</Text>
       <Select
-        placeholder={placeholder}
         border={0}
         cursor="pointer"
         color="text.100"
