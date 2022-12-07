@@ -1,5 +1,6 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import ContactHeader from "../components/contact-header";
+import ContactInfo from "../components/contact-info";
 
 export default function Contact() {
   return (
@@ -8,7 +9,10 @@ export default function Contact() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      Contact Page
+      <section>
+        <ContactHeader />
+        <ContactInfo />
+      </section>
     </div>
   );
 }
