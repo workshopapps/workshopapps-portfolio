@@ -13,7 +13,7 @@ export default function Contact() {
       </Head>
       <section>
         <ContactHeader />
-        <HStack alignItems="flex-start"  w={{ base: "90%", md: "80%" }}
+        <HStack alignItems="flex-start" flexDirection={['column', 'column', 'row']}  w={{ base: "90%", md: "80%" }}
           mx="auto"
           mt="5rem"
           mb="5rem">

@@ -1,4 +1,4 @@
-import React from "react";
+import styles from '../../styles/Contact.module.css'
 import Image from "next/image";
 import sendEmailIcon from "../assets/Email-Send.svg";
 import {
@@ -19,7 +19,7 @@ import {
 
 function ContactForm() {
   return (
-    <Stack w="full" textAlign="left" spacing="20px">  
+    <Stack w="full" textAlign="left" spacing="20px" marginLeft="0px !important">  
       <Text
           fontSize={{ base: "2xl", md: "3xl" }}
           textAlign="left"
@@ -57,7 +57,7 @@ function ContactForm() {
          isSubmitting,
          /* and other goodies */
        }) => (
-         <form onSubmit={handleSubmit} bg="#fff">
+         <form onSubmit={handleSubmit} bg="#fff" className={styles.contact__form}>
             <Stack>
             <FormLabel>Name</FormLabel>
             <input
@@ -67,6 +67,7 @@ function ContactForm() {
              onBlur={handleBlur}
              value={values.name}
              placeholder="Mark Essien"
+             className={styles.contact__text_input}
            />
            {errors.name && touched.name && errors.name}  
            <FormLabel>Email Address</FormLabel>             
@@ -77,6 +78,7 @@ function ContactForm() {
              onBlur={handleBlur}
              value={values.email}
              placeholder="markessien@gmail.com"
+             className={styles.contact__text_input}
            />
            {errors.email && touched.email && errors.email}
            <FormLabel>Phone</FormLabel>
@@ -87,6 +89,7 @@ function ContactForm() {
              onBlur={handleBlur}
              value={values.phoneno}
              placeholder="09079179545"
+             className={styles.contact__text_input}
            />
            {errors.phoneno && touched.phoneno && errors.phoneno}
            <FormLabel>Message</FormLabel>
@@ -94,11 +97,14 @@ function ContactForm() {
              onBlur={handleBlur}
              value={values.phoneno}
              placeholder="Hi, do you have a moment to talk about ..."
+             className={styles.contact__text_message}
             ></textarea>
            {errors.message && touched.message && errors.message}
-           <button type="submit" disabled={isSubmitting}>
-             Submit
-             <Image src={sendEmailIcon} />
+           <button type="submit" disabled={isSubmitting} className={styles.contact__submit__btn} >
+             Send <svg width="1" height="24" viewBox="0 0 1 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.5" y1="2.18557e-08" x2="0.499999" y2="24" stroke="white" stroke-opacity="0.15"/>
+            </svg>
+            <Image src={sendEmailIcon} />
             </button>
             </Stack>
          </form>
