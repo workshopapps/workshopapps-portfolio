@@ -1,10 +1,3 @@
-@media screen and (max-width: 900px) {
-  .bulb {
-    width: 80vw;
-    height: auto;
-  }
-}
-
 .button {
   background: #292d32;
   border: 6px solid rgb(210, 208, 208);
@@ -19,4 +12,15 @@
   font-size: 18px;
   padding-right: 15px;
   border-right: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+@media screen and (max-width: 500px) {
+  .button {
+    padding: 10px;
+    column-gap: 10px;
+  }
+
+  .buttonText {
+    font-size: 15px;
+  }
 }
