@@ -27,7 +27,7 @@ export default function About() {
           <div className={style.card}>
             <Image
               src={heroImg}
-              alt="Picture of the author"
+              alt="Picture of the video"
               width="100%"
               height="100%"
             />

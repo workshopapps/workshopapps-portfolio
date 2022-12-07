@@ -25,8 +25,6 @@
   transition: all 0.5s ease-in-out;
 }
 
-/* @media screen and (max-width: 767px) {
-  .contact__container {
-    margin-top: 3rem;
-  }
-} */
+.error {
+  color: red;
+}

@@ -15,7 +15,7 @@ export default function Contact() {
         <ContactHeader />
         <HStack alignItems="flex-start" flexDirection={['column', 'column', 'row']}  w={{ base: "90%", md: "80%" }}
           mx="auto"
-          mt="5rem"
+          marginTop={["2rem", "2rem", "3rem"]}
           mb="5rem">
           <ContactInfo />
           <ContactForm />
