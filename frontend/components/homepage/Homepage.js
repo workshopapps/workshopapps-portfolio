@@ -1,11 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Box, Stack, Text, Button, ButtonGroup } from "@chakra-ui/react";
-
-import BulbIcon from "../assets/BulbIcon";
-import rightArrow from "../assets/RightArrow.svg";
-
+import { Box, Text } from "@chakra-ui/react";
+import animatedBulb from "../../public/assets/animatedBulb.gif";
+import rightArrow from "../../public/assets/RightArrow.svg";
 import styles from "./Homepage.module.css";
 
 const Homepage = () => {
@@ -16,7 +14,6 @@ const Homepage = () => {
       display="flex"
       flexDirection="column"
       alignItems="center"
-      gap="80px"
     >
       <Box display="flex" alignItems="center" flexDirection="column" gap="25px">
         <Text
@@ -37,7 +34,7 @@ const Homepage = () => {
         </Text>
       </Box>
 
-      <BulbIcon />
+      <Image src={animatedBulb} alt="animated bulb" />
 
       <Link href="/dashboard">
         <Box
@@ -52,7 +49,7 @@ const Homepage = () => {
           </div>
 
           <Text
-            fontSize="xl"
+            fontSize={{ base: "md", md: "xl" }}
             w={{ base: "90%", md: "60%" }}
             mx="auto"
             textAlign="center"
