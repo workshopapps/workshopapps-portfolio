@@ -1,4 +1,4 @@
-import { Heading, Stack, Text } from "@chakra-ui/react";
+import { Heading, Stack, Text, Box } from "@chakra-ui/react";
 import Head from "next/head";
 import Section from "../components/section";
 
@@ -10,6 +10,23 @@ export default function Method() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Stack w="full">
+        <Box
+          px={6}
+          h="340px"
+          w="full"
+          className="banner"
+          color="white"
+          display="grid"
+          placeItems="center"
+        >
+          <Stack spacing={4}>
+            <Heading>The Method of WorkshopApp </Heading>
+            <Text>
+              Below is a step by step representation of the hiring process of
+              WorkshopApp
+            </Text>
+          </Stack>
+        </Box>
         <Stack w="full" bg="white" pt="132px" pb="80px">
           <Section>
             <Heading fontSize="xl" color="black">
