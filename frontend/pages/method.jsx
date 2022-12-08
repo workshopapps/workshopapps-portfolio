@@ -1,6 +1,7 @@
 import { Heading, Stack, Text, Box } from "@chakra-ui/react";
 import Head from "next/head";
 import Progress from "../components/custom-progress";
+import MethodCard from "../components/method-card";
 import Section from "../components/section";
 
 export default function Method() {
@@ -47,7 +48,8 @@ export default function Method() {
             <Heading fontSize="xl">Selection Process</Heading>
           </Section>
         </Stack>
-        <Box>
+        <Box p={20}>
+          <MethodCard />
           <Progress />
         </Box>
 
