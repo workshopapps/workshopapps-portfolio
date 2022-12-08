@@ -1,5 +1,6 @@
 import { Heading, Stack, Text, Box } from "@chakra-ui/react";
 import Head from "next/head";
+import Progress from "../components/custom-progress";
 import Section from "../components/section";
 
 export default function Method() {
@@ -19,7 +20,7 @@ export default function Method() {
           display="grid"
           placeItems="center"
         >
-          <Stack spacing={4}>
+          <Stack spacing={6} textAlign="center">
             <Heading>The Method of WorkshopApp </Heading>
             <Text>
               Below is a step by step representation of the hiring process of
@@ -39,6 +40,20 @@ export default function Method() {
               this is done in order to test as well as bring out the best. Only
               qualified candidats gets hired. The steps include:
             </Text>
+          </Section>
+        </Stack>
+        <Stack bg="brand.400">
+          <Section py={6}>
+            <Heading fontSize="xl">Selection Process</Heading>
+          </Section>
+        </Stack>
+        <Box>
+          <Progress />
+        </Box>
+
+        <Stack bg="brand.400">
+          <Section py={6}>
+            <Heading fontSize="xl">What Happens After Selection</Heading>
           </Section>
         </Stack>
       </Stack>
