@@ -26,9 +26,26 @@ const selectionProcess = [
     requirements / deadlines, get eliminated.
     This process continues until we are left 
     with our desired number / the “Best`,
+    step: 3,
+  },
+];
+
+const afterProcess = [
+  {
+    title: "The Victorious",
+    text: `Applicants who have emerges victorious are then
+    merged into teams of competent individuals.`,
+    step: 1,
+  },
+  {
+    title: "The Team Work",
+    text: `Once merged into tams, the team are then 
+    assigned projects to work on as well recieve 
+    guidiance into turning such project into reality.`,
     step: 2,
   },
 ];
+
 export default function Method() {
   return (
     <div>
@@ -81,19 +98,19 @@ export default function Method() {
                 follow:
               </Text>
             </Box>
-            <Stack pl={20} borderLeft="1px dashed #000" spacing={6}>
-              <HStack spacing={20}>
-                <MethodCard />
-                <Progress />
-              </HStack>
-              <HStack spacing={20}>
-                <MethodCard />
-                <Progress />
-              </HStack>
-              <HStack spacing={20}>
-                <MethodCard />
-                <Progress />
-              </HStack>
+            <Stack pl={20} spacing={6} pb={20}>
+              {selectionProcess.map((process) => (
+                <HStack spacing={20} key={process.step}>
+                  <MethodCard text={process.text} title={process.title} />
+                  <Progress
+                    value={Math.ceil(
+                      (process.step / selectionProcess.length) * 100
+                    )}
+                    step={process.step}
+                    steps={selectionProcess.length}
+                  />
+                </HStack>
+              ))}
             </Stack>
           </Section>
         </Stack>
@@ -101,6 +118,30 @@ export default function Method() {
         <Stack bg="brand.400">
           <Section py={6}>
             <Heading fontSize="xl">What Happens After Selection</Heading>
+          </Section>
+        </Stack>
+        <Stack w="full">
+          <Section py={10}>
+            <Box pb={10}>
+              <Text fontWeight={600} color="brand.700">
+                There are two various steps in this stage, and they are as
+                follow:
+              </Text>
+            </Box>
+            <Stack pl={20} spacing={6} pb={20}>
+              {afterProcess.map((process) => (
+                <HStack spacing={20} key={process.step}>
+                  <MethodCard text={process.text} title={process.title} />
+                  <Progress
+                    value={Math.ceil(
+                      (process.step / afterProcess.length) * 100
+                    )}
+                    step={process.step}
+                    steps={afterProcess.length}
+                  />
+                </HStack>
+              ))}
+            </Stack>
           </Section>
         </Stack>
       </Stack>
