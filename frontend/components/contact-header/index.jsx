@@ -4,7 +4,7 @@ import { Stack, Text, Center} from "@chakra-ui/react";
 
 function ContactHeader() {
   return (
-    <Stack w="full" textAlign="center" spacing="20px" >
+    <Stack w="full" textAlign="center" spacing="20px" marginTop="3rem">
           <Text
           fontSize={{ base: "4xl", md: "5xl" }}
           w={{ base: "90%", md: "80%" }}
