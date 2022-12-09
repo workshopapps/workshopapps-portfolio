@@ -38,3 +38,13 @@ li {
   background: #fff;
   z-index: -1;
 }
+.banner {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("../public/images/banner.svg");
+  background-size: cover;
+  padding: 20px;
+}
