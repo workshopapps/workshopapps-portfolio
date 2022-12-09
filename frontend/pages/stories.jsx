@@ -47,7 +47,7 @@ export default function Stories() {
           </div>
         </div>
 
-        <Link href="https://www.youtube.com/@LearnWithHNG" className={style.contact__submit__btn}>More stores</Link>
+        <Link href="https://www.youtube.com/@LearnWithHNG" className={style.contact__submit__btn}>More stories</Link>
       </section>
     </div>
   );
