@@ -38,11 +38,24 @@
   display: flex;
   gap: 2rem;
   flex-direction: column;
+  margin-bottom: 3rem;
 }
 
 .main__container .stories iframe {
   width: 100%;
   border-radius: 8px;
+}
+
+.contact__submit__btn {
+  background: #292d32;
+  border: 6px solid rgb(210, 208, 208);
+  color: #ffffff;
+  padding: 15px 35px;
+}
+
+.contact__submit__btn:hover {
+  opacity: 0.8;
+  transition: all 0.5s ease-in-out;
 }
 
 /* tablet */
