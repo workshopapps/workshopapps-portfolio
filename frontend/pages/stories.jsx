@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import heroImg from "./../public/about-hero-image.png";
 import styles from "../styles/Home.module.css";
 import style from "../styles/Stories.module.css";
@@ -45,6 +46,8 @@ export default function Stories() {
           <iframe src="https://www.youtube.com/embed/tIvsNlfXAyk?list=PLL0ge2KQPI3WPYwonCVd95EK_wyNe5c8q" title="Principles of Good UI - Must Know" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
+
+        <Link href="https://www.youtube.com/@LearnWithHNG" className={style.contact__submit__btn}>More stories</Link>
       </section>
     </div>
   );
