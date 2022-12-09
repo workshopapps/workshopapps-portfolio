@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Stack, HStack } from "@chakra-ui/react";
 import CohortToggler from "../components/cohort-toggler";
-import DashboardHedaader from "../components/dashboard-header";
+import DashboardHeader from "../components/dashboard-header";
 import CustomSelect, { months, sortTypes } from "../components/custom-select";
 import ProductContainer from "../components/product-container";
 import coverlyImg from "../public/images/coverly.svg";
@@ -12,6 +12,7 @@ import streetrateImg from "../public/images/streetrate.svg";
 import arenaImg from "../public/images/arena.svg";
 import descriptoImg from "../public/images/descripto.svg";
 import devaskImg from "../public/images/devask.svg";
+import Section from "../components/section";
 
 const products = [
   {
@@ -70,8 +71,8 @@ export default function Dashboard() {
       <Head>
         <title>Workshop Apps | Portfolio</title>
       </Head>
-      <Stack p={20} spacing="60px">
-        <DashboardHedaader />
+      <Section py={20} spacing="60px" maxW="1400px">
+        {/* <DashboardHeader /> */}
         <HStack w="full" justifyContent="space-between">
           <CohortToggler />
           <HStack spacing={3}>
@@ -89,7 +90,7 @@ export default function Dashboard() {
             />
           ))}
         </Stack>
-      </Stack>
+      </Section>
     </div>
   );
 }

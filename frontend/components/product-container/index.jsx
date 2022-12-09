@@ -16,8 +16,8 @@ function ProductContainer({
   num,
 }) {
   return (
-    <HStack position="relative">
-      <Box position="absolute" top={isFirst ? 14 : 10} left={-12}>
+    <HStack position="relative" overflowX="auto">
+      <Box>
         <HStack spacing={2}>
           {!loss ? (
             <Stack spacing={0} color="brand.500">
