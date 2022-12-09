@@ -1,7 +1,7 @@
 import { Heading, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 
-function MethodCard() {
+function MethodCard({ title, text }) {
   return (
     <Stack
       bg="brand.50"
@@ -15,12 +15,9 @@ function MethodCard() {
     >
       <Stack alignItems="center" maxW="360px" mx="auto" spacing={6}>
         <Heading color="white" fontSize="28px">
-          The Hiring Process
+          {title}
         </Heading>
-        <Text color="brand.800">
-          Applicants are hired in their numbers as long as their application is
-          before the deadline of the company.
-        </Text>
+        <Text color="brand.800">{text}</Text>
       </Stack>
     </Stack>
   );

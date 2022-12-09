@@ -1,9 +1,34 @@
-import { Heading, Stack, Text, Box } from "@chakra-ui/react";
+import { Heading, Stack, Text, Box, HStack } from "@chakra-ui/react";
 import Head from "next/head";
 import Progress from "../components/custom-progress";
 import MethodCard from "../components/method-card";
 import Section from "../components/section";
 
+const selectionProcess = [
+  {
+    title: "The Hiring Process",
+    text: `Applicants are hired in their numbers as long 
+    as their application is before the deadline of 
+    the company.`,
+    step: 1,
+  },
+  {
+    title: "The Test Process",
+    text: `Applicants are then put through a number of test 
+    through competions.This process is done to first 
+    reduce the number of candidates as well as 
+    challenge them into bringing out the best in them.`,
+    step: 2,
+  },
+  {
+    title: "The Elimination Process",
+    text: `Applicants who dont meet up to the task 
+    requirements / deadlines, get eliminated.
+    This process continues until we are left 
+    with our desired number / the “Best`,
+    step: 2,
+  },
+];
 export default function Method() {
   return (
     <div>
@@ -48,10 +73,30 @@ export default function Method() {
             <Heading fontSize="xl">Selection Process</Heading>
           </Section>
         </Stack>
-        <Box p={20}>
-          <MethodCard />
-          <Progress />
-        </Box>
+        <Stack w="full">
+          <Section py={10}>
+            <Box pb={10}>
+              <Text fontWeight={600} color="brand.700">
+                There are three various steps in this stage, and they are as
+                follow:
+              </Text>
+            </Box>
+            <Stack pl={20} borderLeft="1px dashed #000" spacing={6}>
+              <HStack spacing={20}>
+                <MethodCard />
+                <Progress />
+              </HStack>
+              <HStack spacing={20}>
+                <MethodCard />
+                <Progress />
+              </HStack>
+              <HStack spacing={20}>
+                <MethodCard />
+                <Progress />
+              </HStack>
+            </Stack>
+          </Section>
+        </Stack>
 
         <Stack bg="brand.400">
           <Section py={6}>
