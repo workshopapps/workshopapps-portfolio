@@ -8,7 +8,12 @@ import React from "react";
 
 function Progress({ value, step, steps }) {
   return (
-    <CircularProgress value={value} size="200px" color="brand.50">
+    <CircularProgress
+      value={value}
+      size="200px"
+      color="brand.50"
+      order={{ base: 1, md: 3 }}
+    >
       <CircularProgressLabel display="grid" placeItems="center">
         <Box
           w="20"
