@@ -76,3 +76,14 @@ li {
 .scroll-kit-show::-webkit-scrollbar-track {
   display: none !important;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scroll-kit::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroll-kit {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
