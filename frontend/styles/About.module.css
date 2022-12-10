@@ -2,7 +2,8 @@
 
 /* Hero Section */
 .main__container {
-  width: 80%;
+  /* width: 80%; */
+  padding: 0 2rem 3rem 2rem;
   margin: 0 auto;
 }
 
@@ -121,7 +122,7 @@
 @media (min-width: 768px) {
   /* Hero Section */
   .main__container {
-    margin: 2rem 4rem;
+    padding: 2rem 4rem;
   }
 
   .flex__container {
@@ -212,7 +213,7 @@
 @media (min-width: 1024px) {
   /* Hero Section */
   .main__container {
-    /* margin: 2rem 9rem; */
+    padding: 0 12% 3rem 12%;
     max-width: 1440px;
     margin: 0 auto;
   }
