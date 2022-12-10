@@ -9,7 +9,7 @@ import {
 
 function SalesCard({ isFirst }) {
   return (
-    <Stack spacing={3} w="full" maxW="330px" minW="330px">
+    <Stack spacing={3} w="full" maxW="330px" minW="300px">
       {isFirst && <Heading fontSize="md">Sales</Heading>}
       <Stack
         alignItems="center"

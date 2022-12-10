@@ -4,7 +4,7 @@ import Chart from "../chart";
 
 function FinancialCard({ isFirst }) {
   return (
-    <Stack spacing={3} w="full" maxW="330px" minW="330px">
+    <Stack spacing={3} w="full" maxW="330px" minW="300px">
       {isFirst && <Heading fontSize="md">Financials</Heading>}
       <Stack
         alignItems="center"

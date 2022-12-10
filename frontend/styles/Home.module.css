@@ -114,6 +114,30 @@
   height: 1em;
 }
 
+/* Track */
+.scroll-kit::-webkit-scrollbar-track {
+  cursor: pointer;
+  height: 80px;
+  padding: 20px;
+  display: none;
+  background-color: #efefef;
+}
+
+/* Handle */
+.scroll-kit::-webkit-scrollbar-thumb {
+  display: none;
+  cursor: pointer;
+  background: #aaa;
+  border-radius: 20px;
+}
+
+/* Scroll kit styles */
+.scroll-kit-show::-webkit-scrollbar {
+  height: 8px;
+  width: 9px;
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

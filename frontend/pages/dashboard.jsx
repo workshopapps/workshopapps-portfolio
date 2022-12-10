@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Stack, HStack } from "@chakra-ui/react";
+import { Stack, HStack, Heading } from "@chakra-ui/react";
 import CohortToggler from "../components/cohort-toggler";
 import DashboardHeader from "../components/dashboard-header";
 import CustomSelect, { months, sortTypes } from "../components/custom-select";
@@ -71,9 +71,21 @@ export default function Dashboard() {
       <Head>
         <title>Workshop Apps | Portfolio</title>
       </Head>
-      <Section py={20} spacing="60px" maxW="1400px">
-        {/* <DashboardHeader /> */}
-        <HStack w="full" justifyContent="space-between">
+      <Section py={{ base: 10, md: 20 }} spacing="60px" maxW="1400px">
+        <Stack textAlign="center">
+          <Heading pb={6}>OUR PORTFOLIO</Heading>
+          <Stack overflowX="auto">
+            <DashboardHeader />
+          </Stack>
+        </Stack>
+        <HStack
+          w="full"
+          overflow="hidden"
+          spacing={0}
+          gap={4}
+          justifyContent="space-between"
+          flexWrap="wrap"
+        >
           <CohortToggler />
           <HStack spacing={3}>
             <CustomSelect options={months} />
