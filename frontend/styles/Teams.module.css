@@ -1,5 +1,5 @@
 .teams {
-  margin: 0 2rem 3rem 2rem;
+  padding: 0 2rem 3rem 2rem;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -46,7 +46,7 @@
 /* tablet */
 @media (min-width: 768px) {
   .teams {
-    margin: 0 4rem 3rem 4rem;
+    padding: 0 4rem 3rem 4rem;
   }
 
   .teams h1 {
@@ -61,6 +61,7 @@
 /* Desktop  */
 @media (min-width: 1024px) {
   .teams {
+    padding: 0 12% 3rem 12%;
     max-width: 1440px;
     margin: 0 auto;
   }
