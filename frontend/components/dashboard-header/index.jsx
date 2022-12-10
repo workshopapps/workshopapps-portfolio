@@ -9,11 +9,11 @@ const sections = [
 ];
 
 const Section = ({ field, value }) => (
-  <Stack spacing={6} textAlign="center" minW="200px">
-    <Text color="text.200" fontSize="20px">
+  <Stack spacing={6} textAlign="center" minW="190px">
+    <Text color="text.200" fontSize={{ base: "18px", md: "20px" }}>
       {field}
     </Text>
-    <Heading color="brand.50" fontSize="2rem">
+    <Heading color="brand.50" fontSize={{ base: "1.6rem", md: "2rem" }}>
       {value}
     </Heading>
   </Stack>
@@ -22,7 +22,12 @@ const Section = ({ field, value }) => (
 function DashboardHeader() {
   return (
     <Stack w="full" minW="max-content" spacing="60px">
-      <Stack py={10} px="90px" bg="brand.200" rounded="10">
+      <Stack
+        py={10}
+        px={{ base: "30px", md: "90px" }}
+        bg="brand.200"
+        rounded="10"
+      >
         <HStack w="full" justifyContent="space-between" rounded="6">
           {sections.map((item) => (
             <Section key={item.field} {...item} />

@@ -71,10 +71,10 @@ export default function Dashboard() {
       <Head>
         <title>Workshop Apps | Portfolio</title>
       </Head>
-      <Section py={{ base: 10, md: 20 }} spacing="60px">
+      <Section py={{ base: 10, md: 20 }} spacing="60px" maxW="1300px">
         <Stack textAlign="center">
           <Heading pb={6}>OUR PORTFOLIO</Heading>
-          <Stack overflowX="auto">
+          <Stack overflowX="auto" className="scroll-kit">
             <DashboardHeader />
           </Stack>
         </Stack>
