@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Box, Text } from "@chakra-ui/react";
-import animatedBulb from "../../public/assets/animatedBulb.gif";
+// import animatedBulb from "../../public/assets/animatedBulb.gif";
+import animatedBulb1 from "../../public/assets/animatedBulb1.gif";
 import rightArrow from "../../public/assets/RightArrow.svg";
 import styles from "./Homepage.module.css";
 
@@ -14,6 +15,8 @@ const Homepage = () => {
       display="flex"
       flexDirection="column"
       alignItems="center"
+      maxWidth="1440px"
+      margin="0 auto"
     >
       <Box display="flex" alignItems="center" flexDirection="column" gap="25px">
         <Text
@@ -34,7 +37,7 @@ const Homepage = () => {
         </Text>
       </Box>
 
-      <Image src={animatedBulb} alt="animated bulb" />
+      <Image src={animatedBulb1} alt="animated bulb" />
 
       <Link href="/dashboard">
         <Box
