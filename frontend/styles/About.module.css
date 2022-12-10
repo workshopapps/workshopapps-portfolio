@@ -128,12 +128,6 @@
     display: flex;
     gap: 2rem;
     flex-direction: row;
-  }
-
-  .flex__container {
-    background-color: #292d32;
-    color: #f9f9f9;
-    display: flex;
     padding: 4rem 2rem;
     border-radius: 8px;
   }
@@ -214,6 +208,12 @@
 
 /* Desktop  */
 @media (min-width: 1024px) {
+  /* Hero Section */
+  .main__container {
+    margin: 2rem 9rem;
+    max-width: 1440px;
+  }
+
   .main__container p {
     font-size: 1.2rem;
   }

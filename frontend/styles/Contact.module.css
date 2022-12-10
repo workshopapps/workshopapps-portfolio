@@ -1,3 +1,7 @@
+section {
+  max-width: 1440px;
+}
+
 .contact__text_input,
 .contact__text_message {
   padding: 10px;
