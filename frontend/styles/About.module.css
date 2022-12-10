@@ -211,6 +211,7 @@
   /* Hero Section */
   .main__container {
     margin: 2rem 9rem;
+    max-width: 1440px;
   }
 
   .main__container p {

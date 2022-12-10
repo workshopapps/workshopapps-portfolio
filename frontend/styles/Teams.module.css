@@ -59,6 +59,9 @@
 
 /* Desktop  */
 @media (min-width: 1024px) {
+  .teams {
+    max-width: 1440px;
+  }
   .teams h1 {
     font-size: 2.5rem;
   }
