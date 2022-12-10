@@ -5,7 +5,6 @@ import heroImg from "./../public/about-hero-image.png";
 import styles from "../styles/Home.module.css";
 import style from "../styles/Stories.module.css";
 
-
 export default function Stories() {
   return (
     <div>
@@ -19,7 +18,8 @@ export default function Stories() {
           <div className={`${style.card} ${style.description}`}>
             <h1 className={style.card__title}>Our Stories</h1>
             <p>
-              We do things <span className={style.yellow}>differently</span> here.
+              We do things <span className={style.yellow}>differently</span>{" "}
+              here.
             </p>
           </div>
           <div className={style.card}>
@@ -35,19 +35,48 @@ export default function Stories() {
         <div className={style.stories}>
           <header>
             <h2>Excited to share our stories</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, odio eveniet cupiditate dolorum modi ratione, magni corrupti laborum placeat officia ipsa nobis inventore maxime suscipit natus laboriosam, vero cum deserunt?</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Veritatis, odio eveniet cupiditate dolorum modi ratione, magni
+              corrupti laborum placeat officia ipsa nobis inventore maxime
+              suscipit natus laboriosam, vero cum deserunt?
+            </p>
           </header>
 
           <div className={style.videos}>
-          <iframe src="https://www.youtube.com/embed/Yf111xeKw3E?list=PLL0ge2KQPI3WPYwonCVd95EK_wyNe5c8q" title="Prototyping in Figma" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/Yf111xeKw3E?list=PLL0ge2KQPI3WPYwonCVd95EK_wyNe5c8q"
+              title="Prototyping in Figma"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
 
-          <iframe src="https://www.youtube.com/embed/rx7cgfJXmuE?list=PLL0ge2KQPI3WPYwonCVd95EK_wyNe5c8q" title="Color and Contrast" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/rx7cgfJXmuE?list=PLL0ge2KQPI3WPYwonCVd95EK_wyNe5c8q"
+              title="Color and Contrast"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
 
-          <iframe src="https://www.youtube.com/embed/tIvsNlfXAyk?list=PLL0ge2KQPI3WPYwonCVd95EK_wyNe5c8q" title="Principles of Good UI - Must Know" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/tIvsNlfXAyk?list=PLL0ge2KQPI3WPYwonCVd95EK_wyNe5c8q"
+              title="Principles of Good UI - Must Know"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
-
-        <Link href="https://www.youtube.com/@LearnWithHNG" className={style.contact__submit__btn}>More stories</Link>
+        <div className={style.footer_btn}>
+          <Link
+            href="https://www.youtube.com/@LearnWithHNG"
+            className={style.contact__submit__btn}
+          >
+            More stories
+          </Link>
+        </div>
       </section>
     </div>
   );

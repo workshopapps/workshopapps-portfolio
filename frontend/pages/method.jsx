@@ -98,9 +98,13 @@ export default function Method() {
                 follow:
               </Text>
             </Box>
-            <Stack pl={20} spacing={6} pb={20}>
+            <Stack pl={{ base: 0, md: 20 }} spacing={10} pb={20}>
               {selectionProcess.map((process) => (
-                <HStack spacing={20} key={process.step}>
+                <HStack
+                  gap={{ base: 4, md: 20 }}
+                  key={process.step}
+                  flexWrap="wrap"
+                >
                   <MethodCard text={process.text} title={process.title} />
                   <Progress
                     value={Math.ceil(
@@ -128,9 +132,13 @@ export default function Method() {
                 follow:
               </Text>
             </Box>
-            <Stack pl={20} spacing={6} pb={20}>
+            <Stack pl={{ base: 0, md: 20 }} spacing={10} pb={20}>
               {afterProcess.map((process) => (
-                <HStack spacing={20} key={process.step}>
+                <HStack
+                  gap={{ base: 4, md: 20 }}
+                  key={process.step}
+                  flexWrap="wrap"
+                >
                   <MethodCard text={process.text} title={process.title} />
                   <Progress
                     value={Math.ceil(

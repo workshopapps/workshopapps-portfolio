@@ -10,14 +10,17 @@ function MethodCard({ title, text }) {
       height="231px"
       alignItems="center"
       justifyContent="center"
-      pax={3}
+      px={3}
+      order={{ base: 3, md: 1 }}
       rounded={8}
     >
       <Stack alignItems="center" maxW="360px" mx="auto" spacing={6}>
-        <Heading color="white" fontSize="28px">
+        <Heading color="white" fontSize={{ base: "20px", md: "28px" }}>
           {title}
         </Heading>
-        <Text color="brand.800">{text}</Text>
+        <Text color="brand.800" fontSize={{ base: "nm", md: "md" }}>
+          {text}
+        </Text>
       </Stack>
     </Stack>
   );
