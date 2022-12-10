@@ -91,6 +91,7 @@
   text-align: left;
   display: flex;
   flex-direction: column;
+  margin-bottom: 4rem;
 }
 
 .about__portfolio h2 {
