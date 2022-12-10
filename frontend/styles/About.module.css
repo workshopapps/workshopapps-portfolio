@@ -2,7 +2,8 @@
 
 /* Hero Section */
 .main__container {
-  margin: 2rem 2rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .flex__container {
@@ -210,8 +211,9 @@
 @media (min-width: 1024px) {
   /* Hero Section */
   .main__container {
-    margin: 2rem 9rem;
+    /* margin: 2rem 9rem; */
     max-width: 1440px;
+    margin: 0 auto;
   }
 
   .main__container p {
