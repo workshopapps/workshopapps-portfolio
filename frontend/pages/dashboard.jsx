@@ -1,7 +1,7 @@
 import Head from "next/head";
-import { Stack, HStack } from "@chakra-ui/react";
+import { Stack, HStack, Heading } from "@chakra-ui/react";
 import CohortToggler from "../components/cohort-toggler";
-import DashboardHedaader from "../components/dashboard-header";
+import DashboardHeader from "../components/dashboard-header";
 import CustomSelect, { months, sortTypes } from "../components/custom-select";
 import ProductContainer from "../components/product-container";
 import coverlyImg from "../public/images/coverly.svg";
@@ -12,6 +12,7 @@ import streetrateImg from "../public/images/streetrate.svg";
 import arenaImg from "../public/images/arena.svg";
 import descriptoImg from "../public/images/descripto.svg";
 import devaskImg from "../public/images/devask.svg";
+import Section from "../components/section";
 
 const products = [
   {
@@ -70,9 +71,21 @@ export default function Dashboard() {
       <Head>
         <title>Workshop Apps | Portfolio</title>
       </Head>
-      <Stack p={20} spacing="60px">
-        <DashboardHedaader />
-        <HStack w="full" justifyContent="space-between">
+      <Section py={{ base: 10, md: 20 }} spacing="60px">
+        <Stack textAlign="center">
+          <Heading pb={6}>OUR PORTFOLIO</Heading>
+          <Stack overflowX="auto">
+            <DashboardHeader />
+          </Stack>
+        </Stack>
+        <HStack
+          w="full"
+          overflow="hidden"
+          spacing={0}
+          gap={4}
+          justifyContent="space-between"
+          flexWrap="wrap"
+        >
           <CohortToggler />
           <HStack spacing={3}>
             <CustomSelect options={months} />
@@ -89,7 +102,7 @@ export default function Dashboard() {
             />
           ))}
         </Stack>
-      </Stack>
+      </Section>
     </div>
   );
 }

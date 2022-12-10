@@ -16,7 +16,11 @@ function ProductContainer({
   num,
 }) {
   return (
-    <HStack position="relative">
+    <HStack
+      position="relative"
+      overflowX={{ base: "auto", lg: "initial" }}
+      className="scroll-kit"
+    >
       <Box position="absolute" top={isFirst ? 14 : 10} left={-12}>
         <HStack spacing={2}>
           {!loss ? (

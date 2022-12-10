@@ -48,3 +48,31 @@ li {
   background-size: cover;
   padding: 20px;
 }
+/* Track */
+.scroll-kit::-webkit-scrollbar-track {
+  display: none !important;
+  cursor: pointer;
+  height: 80px;
+  padding: 20px;
+  display: none;
+  background-color: #efefef;
+}
+
+/* Handle */
+.scroll-kit::-webkit-scrollbar-thumb {
+  display: none !important;
+  cursor: pointer;
+  background: #aaa;
+  border-radius: 20px;
+}
+
+/* Scroll kit styles */
+.scroll-kit-show::-webkit-scrollbar {
+  height: 8px;
+  display: none !important;
+  width: 9px;
+  cursor: pointer;
+}
+.scroll-kit-show::-webkit-scrollbar-track {
+  display: none !important;
+}

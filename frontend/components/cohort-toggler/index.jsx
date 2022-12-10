@@ -11,6 +11,10 @@ const btnProps = {
   position: "relative",
   zIndex: "3",
   size: "md",
+  px: {
+    base: "3",
+    lg: "auto",
+  },
   fontWeight: "normal",
   _hover: {},
   overflow: "hidden",

@@ -21,8 +21,7 @@ const Section = ({ field, value }) => (
 
 function DashboardHeader() {
   return (
-    <Stack w="full" textAlign="center" spacing="60px">
-      <Heading>OUR PORTFOLIO</Heading>
+    <Stack w="full" minW="max-content" spacing="60px">
       <Stack py={10} px="90px" bg="brand.200" rounded="10">
         <HStack w="full" justifyContent="space-between" rounded="6">
           {sections.map((item) => (
