@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../../public/assets/WorkshopAppLogo";
@@ -10,16 +10,34 @@ import NavList from "./NavList";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // to toggle navbar
   const handleNav = () => {
     setIsOpen(!isOpen);
   };
 
+  // to close navbar when escape key is pressed
+  const escFuntion = useCallback((event) => {
+    if (event.key === "Escape") {
+      setIsOpen(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener("keydown", escFuntion);
+
+    return () => {
+      document.removeEventListener("keydown", escFuntion);
+    };
+  }, []);
+
   return (
     <>
       <header className={styles.header}>
-        <Link href="/">
+        {/* <Link href="/"> */}
+        <div onClick={handleNav}>
           <Logo />
-        </Link>
+        </div>
+        {/* </Link> */}
 
         <Image
           src={HamburgerIcon}

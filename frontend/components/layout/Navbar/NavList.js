@@ -31,6 +31,15 @@ const NavList = ({ handleNav, isOpen }) => {
           handleNav();
         }}
       >
+        <Link href="/portfolio">Portfolio</Link>
+      </li>
+
+      <li
+        className={styles.link}
+        onClick={() => {
+          handleNav();
+        }}
+      >
         <Link href="/about">About</Link>
       </li>
 

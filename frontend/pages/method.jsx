@@ -53,25 +53,26 @@ export default function Method() {
         <title>Workshop Apps | Method </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Stack w="full">
-        <Box
-          px={6}
-          h="340px"
-          w="full"
-          className="banner"
-          color="white"
-          display="grid"
-          placeItems="center"
-        >
-          <Stack spacing={6} textAlign="center">
-            <Heading>The Method of WorkshopApp </Heading>
-            <Text>
-              Below is a step by step representation of the hiring process of
-              WorkshopApp
-            </Text>
-          </Stack>
-        </Box>
-        <Stack w="full" bg="white" pt="132px" pb="80px">
+      <Box
+        px={6}
+        h="340px"
+        w="full"
+        className="banner"
+        color="white"
+        display="grid"
+        placeItems="center"
+      >
+        <Stack spacing={6} textAlign="center">
+          <Heading>The Method of WorkshopApp </Heading>
+          <Text>
+            Below is a step by step representation of the hiring process of
+            WorkshopApp
+          </Text>
+        </Stack>
+      </Box>
+
+      <Stack maxWidth="1440px" margin="0 auto">
+        <Stack bg="white" pt="132px" pb="80px" width="75%" margin="0 auto">
           <Section>
             <Heading fontSize="xl" color="black">
               Overview
@@ -85,13 +86,15 @@ export default function Method() {
             </Text>
           </Section>
         </Stack>
+
         <Stack bg="brand.400">
-          <Section py={6}>
+          <Section py={6} width="75%" margin="0 auto">
             <Heading fontSize="xl">Selection Process</Heading>
           </Section>
         </Stack>
+
         <Stack w="full">
-          <Section py={10}>
+          <Section py={10} width="75%" margin="0 auto">
             <Box pb={10}>
               <Text fontWeight={600} color="brand.700">
                 There are three various steps in this stage, and they are as
@@ -120,12 +123,12 @@ export default function Method() {
         </Stack>
 
         <Stack bg="brand.400">
-          <Section py={6}>
+          <Section py={6} width="75%" margin="0 auto">
             <Heading fontSize="xl">What Happens After Selection</Heading>
           </Section>
         </Stack>
         <Stack w="full">
-          <Section py={10}>
+          <Section py={10} width="75%" margin="0 auto">
             <Box pb={10}>
               <Text fontWeight={600} color="brand.700">
                 There are two various steps in this stage, and they are as

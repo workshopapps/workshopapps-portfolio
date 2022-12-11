@@ -1,10 +1,14 @@
 /* Mobile first  */
+.div {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 /* Hero Section */
 .main__container {
-  /* width: 80%; */
-  padding: 0 2rem 3rem 2rem;
+  width: 75%;
   margin: 0 auto;
+  /* padding: 0 2rem 3rem 2rem; */
 }
 
 .flex__container {
@@ -102,9 +106,9 @@
 /* tablet */
 @media (min-width: 768px) {
   /* Hero Section */
-  .main__container {
+  /* .main__container {
     padding: 2rem 4rem;
-  }
+  } */
 
   .flex__container {
     background-color: #292d32;
@@ -167,11 +171,11 @@
 /* Desktop  */
 @media (min-width: 1024px) {
   /* Hero Section */
-  .main__container {
-    padding: 0 12% 3rem 12%;
+  /* .main__container {            */
+  /* padding: 0 12% 3rem 12%;
     max-width: 1440px;
-    margin: 0 auto;
-  }
+    margin: 0 auto; */
+  /* }   */
 
   .main__container p {
     font-size: 1.2rem;

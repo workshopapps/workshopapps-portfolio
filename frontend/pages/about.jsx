@@ -9,7 +9,7 @@ import style from "../styles/About.module.css";
 
 export default function About() {
   return (
-    <div>
+    <div className={style.div}>
       <Head>
         <title>Workshop Apps | About</title>
         <link rel="icon" href="/favicon.ico" />
@@ -81,7 +81,7 @@ export default function About() {
             have the experience you need to among the 10% successful start ups
           </p>
 
-          <Link href="/dashboard">See our portfolio</Link>
+          <Link href="/portfolio">See our portfolio</Link>
         </div>
       </section>
     </div>
