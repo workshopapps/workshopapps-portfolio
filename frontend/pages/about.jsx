@@ -105,7 +105,7 @@ export default function About() {
             have the experience you need to among the 10% successful start ups
           </p>
 
-          <Link href="/dashboard">See our portfolio</Link>
+          <Link href="/portfolio">See our portfolio</Link>
         </div>
       </section>
     </div>

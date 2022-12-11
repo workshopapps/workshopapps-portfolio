@@ -2,34 +2,34 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Box, Text } from "@chakra-ui/react";
-// import animatedBulb from "../../public/assets/animatedBulb.gif";
-import animatedBulb1 from "../../public/assets/animatedBulb1.gif";
-import rightArrow from "../../public/assets/RightArrow.svg";
+import animatedBulb from "../../public/assets/animatedBulb2.gif";
 import styles from "./Homepage.module.css";
 
 const Homepage = () => {
   return (
     <Box
-      pt={16}
+      pt={5}
       pb={14}
       display="flex"
       flexDirection="column"
       alignItems="center"
       maxWidth="1440px"
       margin="0 auto"
+      gap="60px"
     >
       <Box
-        width="75%"
+        width={{ base: "90%", xl: "75%" }}
         display="flex"
         alignItems="center"
         flexDirection="column"
-        gap="25px"
+        gap="15px"
       >
         <Text
           fontSize={{ base: "4xl", md: "5xl" }}
-          w={{ base: "90%", md: "60%" }}
+          w={{ base: "95%", md: "75%", xl: "60%" }}
           mx="auto"
           textAlign="center"
+          lineHeight="1.3"
         >
           A Venture studio with a ‘unique’ twist
         </Text>
@@ -43,7 +43,9 @@ const Homepage = () => {
         </Text>
       </Box>
 
-      <Image src={animatedBulb1} alt="animated bulb" />
+      <Box width={{ base: "100%", xl: "75%" }}>
+        <Image src={animatedBulb} alt="animated bulb" />
+      </Box>
 
       <Box
         display="flex"
@@ -52,16 +54,24 @@ const Homepage = () => {
         gap="30px"
         width="75%"
       >
-        <Link href="/dashboard">
+        <Link href="/portfolio">
           <div className={styles.button}>
             <p className={styles.buttonText}>Our Portfolio</p>
-            <Image src={rightArrow} alt="arrow" />
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M8 16L6.575 14.6L12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16Z" />
+            </svg>
           </div>
         </Link>
 
         <Text
           fontSize={{ base: "md", md: "xl" }}
-          w={{ base: "90%", md: "70%" }}
+          w={{ base: "95%", xl: "70%" }}
           mx="auto"
           textAlign="center"
         >

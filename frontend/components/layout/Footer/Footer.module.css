@@ -14,7 +14,7 @@
   gap: 20px;
 }
 
-.footerIcon,
+/* .footerIcon,
 .logo,
 .link {
   transition: all 0.2s linear;
@@ -23,7 +23,7 @@
 .footerIcon:hover,
 .logo:hover {
   transform: scale(1.1);
-}
+} */
 
 .footerLinks {
   display: flex;
