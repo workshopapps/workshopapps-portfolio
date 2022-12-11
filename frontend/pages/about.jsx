@@ -34,30 +34,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* quote  */}
-        <div className={style.about__quote}>
-          <div className={style.quote__icon__container}>
-            <Image
-              src={invertedQuote}
-              alt="Picture of the author"
-              width="100%"
-              height="100%"
-            />
-          </div>
-          <p>
-            90% of startups are failing, with our 300+ portfolio experience we
-            will prevent mistakes of failed start ups and make it the top 10%
-          </p>
-          <div className={style.quote__icon__container2}>
-            <Image
-              src={quote}
-              alt="Picture of the author"
-              width="100%"
-              height="100%"
-            />
-          </div>
-        </div>
-
         {/* Our team */}
         <div className={style.about__team}>
           <div className={style.img__container}>
