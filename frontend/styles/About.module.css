@@ -22,26 +22,6 @@
   font-weight: 700;
 }
 
-/* quote  */
-.about__quote {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #292d32;
-  margin: 6rem 0;
-  font-weight: 700;
-  font-size: 4rem;
-}
-
-.quote__icon__container {
-  width: 100%;
-}
-
-.quote__icon__container2 {
-  width: 5%;
-  display: flex;
-}
-
 .about__quote img {
   width: 1.5rem;
 }
@@ -56,6 +36,7 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .about__team h1 {
@@ -135,17 +116,6 @@
     border-radius: 8px;
   }
 
-  .quote__icon__container {
-    width: 65%;
-  }
-
-  .quote__icon__container2 {
-    width: 65%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-
   .card__title {
     font-size: 3rem;
     font-weight: 700;
@@ -158,21 +128,6 @@
 
   .description {
     padding-right: 4rem;
-  }
-
-  /* quote  */
-  .about__quote {
-    margin: 8rem 2rem;
-  }
-
-  .about__quote p {
-    width: 55%;
-    font-size: 1.5rem;
-    margin-left: 0;
-  }
-
-  .about__quote img {
-    width: 2rem;
   }
 
   /* team  */
@@ -241,13 +196,6 @@
   .flex__container h1 {
     font-size: 2.5rem;
   }
-
-  /* quote */
-  .about__quote p {
-    font-size: 1.7rem;
-  }
-  /* 
-
 
   /* team */
   .about__team h1 {
