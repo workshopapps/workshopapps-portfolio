@@ -2,7 +2,7 @@
 
 /* Hero Section */
 .main__container {
-  padding: 0 2rem 3rem 2rem;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -12,8 +12,9 @@
   display: flex;
   gap: 2rem;
   flex-direction: column;
-  padding: 4rem 2rem;
   border-radius: 8px;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .flex__container h1 {
@@ -33,6 +34,11 @@
 .main__container header h2 {
   font-size: 1.5rem;
   font-weight: bolder;
+}
+
+.stories {
+  width: 75%;
+  margin: 0 auto;
 }
 
 .main__container .stories .videos {
@@ -62,13 +68,15 @@
 .footer_btn {
   padding-top: 20px;
   min-height: 90px;
+  width: 75%;
+  margin: 0 auto;
 }
 /* tablet */
 @media (min-width: 768px) {
   /* Hero Section */
-  .main__container {
+  /* .main__container {
     padding: 2rem 4rem;
-  }
+  } */
 
   .flex__container {
     background-color: #292d32;
@@ -89,11 +97,11 @@
 /* Desktop  */
 @media (min-width: 1024px) {
   /* Hero Section */
-  .main__container {
+  /* .main__container {
     padding: 0 12% 3rem 12%;
     margin: 0 auto;
     max-width: 1440px;
-  }
+  } */
 
   .main__container h1 {
     font-size: 4rem;

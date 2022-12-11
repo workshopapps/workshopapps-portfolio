@@ -9,7 +9,7 @@ import style from "../styles/About.module.css";
 
 export default function About() {
   return (
-    <div>
+    <div className={style.div}>
       <Head>
         <title>Workshop Apps | About</title>
         <link rel="icon" href="/favicon.ico" />

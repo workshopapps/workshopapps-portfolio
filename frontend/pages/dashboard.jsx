@@ -71,15 +71,22 @@ export default function Dashboard() {
       <Head>
         <title>Workshop Apps | Portfolio</title>
       </Head>
-      <Section py={{ base: 10, md: 20 }} spacing="60px" maxW="1300px">
-        <Stack textAlign="center">
+      <Section
+        py={{ base: 10, md: 20 }}
+        spacing="60px"
+        maxWidth="1440px"
+        margin="0 auto"
+      >
+        <Stack textAlign="center" w="75%" margin="0 auto">
           <Heading pb={6}>OUR PORTFOLIO</Heading>
           <Stack overflowX="auto" className="scroll-kit">
             <DashboardHeader />
           </Stack>
         </Stack>
+
         <HStack
-          w="full"
+          w="75%"
+          margin="0 auto"
           overflow="hidden"
           spacing={0}
           gap={4}
@@ -92,7 +99,8 @@ export default function Dashboard() {
             <CustomSelect type="Sort" options={sortTypes} />
           </HStack>
         </HStack>
-        <Stack w="full" spacing={12}>
+
+        <Stack w="90%" margin="0 auto" spacing={12}>
           {products.map((product, i) => (
             <ProductContainer
               key={product.name}

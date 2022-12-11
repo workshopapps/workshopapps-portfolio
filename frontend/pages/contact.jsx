@@ -18,7 +18,7 @@ export default function Contact() {
         <HStack
           alignItems="flex-start"
           flexDirection={["column", "column", "row"]}
-          w={{ base: "90%", md: "80%" }}
+          w={{ base: "90%", md: "75%" }}
           mx="auto"
           marginTop={["2rem", "2rem", "3rem"]}
           mb="5rem"

@@ -70,12 +70,13 @@ export default function Stories() {
           </div>
         </div>
         <div className={style.footer_btn}>
-          <Link
+          <a
             href="https://www.youtube.com/@LearnWithHNG"
             className={style.contact__submit__btn}
+            target="_blank"
           >
             More stories
-          </Link>
+          </a>
         </div>
       </section>
     </div>
