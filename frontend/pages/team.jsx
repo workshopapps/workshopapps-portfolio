@@ -78,7 +78,7 @@ export default function About() {
               height="100%"
               />
             <figcaption>
-              <h3>Stephen Essien</h3>
+              <h3>Stephen Johnson</h3>
               <p>Developer</p>
             </figcaption>
           </figure>
