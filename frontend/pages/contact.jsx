@@ -14,12 +14,12 @@ export default function Contact() {
         <title>Workshop Apps | Contact</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Section alignItems="center" pb={10}>
+      <Section w="full" alignItems="center" pb={10}>
         <ContactHeader />
         <HStack
           alignItems="flex-start"
           flexDirection={["column", "column", "row"]}
-          w={{ base: "90%", md: "75%" }}
+          w="full"
           mx="auto"
           marginTop={["2rem", "2rem", "3rem"]}
           mb="5rem"

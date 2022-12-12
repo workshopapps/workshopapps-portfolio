@@ -18,7 +18,8 @@ function ProductContainer({
   return (
     <HStack
       position="relative"
-      overflowX={{ base: "auto", lg: "initial" }}
+      w="full"
+      overflowX={{ base: "auto" }}
       className="scroll-kit"
     >
       <Box position="absolute" top={isFirst ? 14 : 10} left={-12}>

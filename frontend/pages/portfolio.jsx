@@ -93,7 +93,7 @@ export default function Portfolio() {
           </HStack>
         </HStack>
 
-        <Stack w="90%" spacing={12}>
+        <Stack spacing={12}>
           {products.map((product, i) => (
             <ProductContainer
               key={product.name}
