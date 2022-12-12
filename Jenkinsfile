@@ -19,6 +19,7 @@ pipeline {
       
       steps{
             sh "sudo cp -fr ${WORKSPACE}/frontend/* /home/javi/workshopapps-frontend/"
+            sh "sudo systemctl restart workshopapp.service"
       }
     }
   
