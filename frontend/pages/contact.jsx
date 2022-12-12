@@ -3,6 +3,7 @@ import Head from "next/head";
 import ContactForm from "../components/contact-form";
 import ContactHeader from "../components/contact-header";
 import ContactInfo from "../components/contact-info";
+import Section from "../components/section";
 
 import styles from "../styles/Contact.module.css";
 
@@ -13,7 +14,7 @@ export default function Contact() {
         <title>Workshop Apps | Contact</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className={styles.section}>
+      <Section alignItems="center" pb={10}>
         <ContactHeader />
         <HStack
           alignItems="flex-start"
@@ -26,7 +27,7 @@ export default function Contact() {
           <ContactInfo />
           <ContactForm />
         </HStack>
-      </section>
+      </Section>
     </div>
   );
 }

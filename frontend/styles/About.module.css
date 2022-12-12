@@ -1,12 +1,13 @@
 /* Mobile first  */
-.div {
-  max-width: 1440px;
+/* .div {
+  max-width: 1320px;
   margin: 0 auto;
-}
+} */
 
 /* Hero Section */
 .main__container {
-  width: 75%;
+  /* width: 75%; */
+  /* padding: 0 20px; */
   margin: 0 auto;
   /* padding: 0 2rem 3rem 2rem; */
 }
@@ -173,7 +174,7 @@
   /* Hero Section */
   /* .main__container {            */
   /* padding: 0 12% 3rem 12%;
-    max-width: 1440px;
+    max-width: 1320px;
     margin: 0 auto; */
   /* }   */
 

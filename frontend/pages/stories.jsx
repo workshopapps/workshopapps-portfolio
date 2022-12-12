@@ -2,8 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import heroImg from "./../public/about-hero-image.png";
-import styles from "../styles/Home.module.css";
 import style from "../styles/Stories.module.css";
+import Section from "../components/section";
 
 export default function Stories() {
   return (
@@ -12,7 +12,7 @@ export default function Stories() {
         <title>Workshop Apps | Stories</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className={style.main__container}>
+      <Section className={style.main__container}>
         {/* hero  */}
         <div className={style.flex__container}>
           <div className={`${style.card} ${style.description}`}>
@@ -78,7 +78,7 @@ export default function Stories() {
             More stories
           </a>
         </div>
-      </section>
+      </Section>
     </div>
   );
 }
