@@ -101,7 +101,7 @@ export default function Method() {
                 follow:
               </Text>
             </Box>
-            <Stack pl={{ base: 0, md: 20 }} spacing={10} pb={20}>
+            <Stack pl={{ base: 0, md: 0 }} spacing={10} pb={20}>
               {selectionProcess.map((process) => (
                 <HStack
                   gap={{ base: 4, md: 20 }}
@@ -135,7 +135,7 @@ export default function Method() {
                 follow:
               </Text>
             </Box>
-            <Stack pl={{ base: 0, md: 20 }} spacing={10} pb={20}>
+            <Stack pl={{ base: 0, md: 0 }} spacing={10} pb={20}>
               {afterProcess.map((process) => (
                 <HStack
                   gap={{ base: 4, md: 20 }}
