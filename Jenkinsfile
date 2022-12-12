@@ -18,7 +18,7 @@ pipeline {
     stage("Deploy App"){
       
       steps{
-            sh "sudo cp -fr ${WORKSPACE}/frontend/* /home/javi/workshopapps-portfolio/"
+            sh "sudo cp -fr ${WORKSPACE}/frontend/* /home/javi/workshopapps-portfolio/frontend/"
       }
     }
   
