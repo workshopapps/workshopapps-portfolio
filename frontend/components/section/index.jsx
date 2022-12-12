@@ -5,7 +5,7 @@ function Section({ children, ...others }) {
   return (
     <Stack
       w="full"
-      maxW="1100px"
+      maxW="1240px"
       mx="auto"
       px={{ base: 6, md: 12 }}
       {...others}
