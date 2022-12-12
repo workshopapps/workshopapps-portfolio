@@ -39,7 +39,7 @@ export default function Stories() {
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Veritatis, odio eveniet cupiditate dolorum modi ratione, magni
               corrupti laborum placeat officia ipsa nobis inventore maxime
-              suscipit natus laboriosam, vero cum deserunt?
+              suscipit natus laboriosam, vero cum deserunt? HNG.
             </p>
           </header>
 
