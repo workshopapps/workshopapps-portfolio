@@ -13,7 +13,7 @@ const Homepage = () => {
       display="flex"
       flexDirection="column"
       alignItems="center"
-      maxWidth="1440px"
+      maxWidth="1320px"
       margin="0 auto"
       gap="60px"
     >

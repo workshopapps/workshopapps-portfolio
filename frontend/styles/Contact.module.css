@@ -1,9 +1,3 @@
-.section {
-  /* padding: 0 2rem 3rem 2rem; */
-  margin: 0 auto;
-  max-width: 1440px;
-}
-
 .contact__text_input,
 .contact__text_message {
   padding: 10px;

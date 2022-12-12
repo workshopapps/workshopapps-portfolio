@@ -6,10 +6,11 @@ import invertedQuote from "./../public/quote-inverted.png";
 import team from "./../public/team.png";
 import Link from "next/link";
 import style from "../styles/About.module.css";
+import Section from "../components/section";
 
 export default function About() {
   return (
-    <div className={style.div}>
+    <Section>
       <Head>
         <title>Workshop Apps | About</title>
         <link rel="icon" href="/favicon.ico" />
@@ -84,6 +85,6 @@ export default function About() {
           <Link href="/portfolio">See our portfolio</Link>
         </div>
       </section>
-    </div>
+    </Section>
   );
 }

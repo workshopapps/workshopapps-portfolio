@@ -2,7 +2,7 @@
 
 /* Hero Section */
 .main__container {
-  max-width: 1440px;
+  max-width: 1320px;
   margin: 0 auto;
 }
 
@@ -100,7 +100,7 @@
   /* .main__container {
     padding: 0 12% 3rem 12%;
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1320px;
   } */
 
   .main__container h1 {
