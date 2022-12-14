@@ -1,8 +1,8 @@
 import React from "react";
-import { Stack, Text, Heading, HStack, Box } from "@chakra-ui/react";
+import { Stack, Text, Heading, HStack, Box, Link } from "@chakra-ui/react";
 import Image from "next/image";
 
-function ProductCard({ isFirst, name, img, desc }) {
+function ProductCard({ isFirst, name, img, desc, url }) {
   return (
     <Stack spacing={3} w="full" maxW="330px" minW="300px">
       {isFirst && <Heading fontSize="md">Product</Heading>}
@@ -34,7 +34,9 @@ function ProductCard({ isFirst, name, img, desc }) {
               color="black"
               fontSize="xl"
             >
-              {name}
+              <Link href={url} isExternal>
+                {name}
+              </Link>
             </Heading>
           </HStack>
           <Stack>

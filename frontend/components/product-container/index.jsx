@@ -14,6 +14,7 @@ function ProductContainer({
   img,
   desc,
   num,
+  url,
 }) {
   return (
     <HStack
@@ -22,7 +23,7 @@ function ProductContainer({
       overflowX={{ base: "auto" }}
       className="scroll-kit"
     >
-      <Box position="absolute" top={isFirst ? 14 : 10} left={-12}>
+      <Box>
         <HStack spacing={2}>
           {!loss ? (
             <Stack spacing={0} color="brand.500">
@@ -38,10 +39,16 @@ function ProductContainer({
           <Heading fontSize="lg">0{num}</Heading>
         </HStack>
       </Box>
-      <ProductCard isFirst={isFirst} name={name} img={img} desc={desc} />
-      <FinancialCard isFirst={isFirst} />
+      <ProductCard
+        isFirst={isFirst}
+        name={name}
+        img={img}
+        desc={desc}
+        url={url}
+      />
+      {/* <FinancialCard isFirst={isFirst} /> */}
       <MarketingCard isFirst={isFirst} />
-      <SalesCard isFirst={isFirst} />
+      {/* <SalesCard isFirst={isFirst} /> */}
     </HStack>
   );
 }
