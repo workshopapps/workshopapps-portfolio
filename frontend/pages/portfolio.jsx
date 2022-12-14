@@ -12,129 +12,174 @@ import streetrateImg from "../public/images/streetrate.svg";
 import arenaImg from "../public/images/arena.svg";
 import descriptoImg from "../public/images/descripto.svg";
 import devaskImg from "../public/images/devask.svg";
+import yieldImg from "../public/images/yield.svg";
+import afmImg from "../public/images/afm.svg";
+import fixitImg from "../public/images/fixit.svg";
+import voxImg from "../public/images/vox.svg";
+import certImg from "../public/images/cert.svg";
+import tickImg from "../public/images/tick.svg";
+import magicImg from "../public/images/magic.svg";
 import Section from "../components/section";
 
 const products = [
   {
+    name: "Speakbetter",
+    img: gritImg,
+    loss: true,
+    url: "http://speakbetter.hng.tech",
+    desc: "A multilingual app that makes you write better, speak better, increase your vocabulary, transcribe audio and correct text to aid accuracy for new and existing language speakers.",
+  },
+  {
     name: "Coverly",
     img: coverlyImg,
     loss: true,
+    url: "http://coverly.hng.tech",
     desc: "An AI powered cover letter generator that gets relevant user data from uploaded CVs and helps users write cover letters for job applications without having them explicitly do it.",
   },
   {
     name: "Ticked App",
-    img: soberpalImg,
+    img: tickImg,
     loss: false,
+    url: "https://ticked.hng.tech/",
     desc: "A todo app with a virtual assistant who calls users to remind them to do their task when it’s due. Users can also assign tasks to the virtual assistant to do for them",
   },
   {
     name: "Kitchen Diary",
     img: kitchenImg,
     loss: false,
+    url: "http://kitchendiary.hng.tech",
     desc: "is a web app that enables users edit and print out beautiful recipe cards in A4 format that they can use in their kitchen or as gifts to friends and family.",
   },
   {
     name: "StreetRate",
     img: streetrateImg,
     loss: false,
+    url: "http://streetrates.hng.tech",
     desc: "A real exchange rate app that shows the user accurate black market rates.",
   },
   {
     name: "VoxClips",
-    img: arenaImg,
+    img: voxImg,
     loss: false,
+    url: "http://voxclips.hng.tech",
     desc: "A web app that allows podcasters upload their podcast audio to get a talking head animated video version of their audio",
   },
   {
     name: "Discripto",
     img: descriptoImg,
     loss: false,
+    url: "https://discripto.hng.tech/",
     desc: "A tool that focus that help users efficiently and effectively manage and organize their image collections, making it easier and faster to find and access the images they need.",
   },
   {
     name: "Eval360",
     img: devaskImg,
     loss: true,
+    url: "http://eval360.hng.tech",
     desc: "is a skill evaluator tool that is used for assessing engineers in an organisation.",
   },
   {
     name: "Heed",
     img: devaskImg,
     loss: true,
+    url: "http://heed.hng.tech",
     desc: "Customer support call transcript and sentimental analysis tool to rank sales and support team performance",
   },
   {
     name: "Soberpal",
     img: devaskImg,
     loss: true,
+    url: "http://soberpal.hng.tech",
     desc: "Is an alcohol addiction support app that helps users reduce their alcohol consumption.",
   },
   {
     name: "Repute",
     img: devaskImg,
     loss: true,
+    url: "http://repute.hng.tech",
     desc: "Is a reputation management app that links businesses with lawyers to remove bad reviews.",
   },
   {
     name: "Tropical Weather",
     img: devaskImg,
     loss: true,
+    url: "http://tropicalweather.hng.tech",
     desc: "Weather forecast app tailored specifically for tropical regions, which alerts users of upcoming weather events (rain, sun, fog) so they can prepare accordingly.",
   },
   {
     name: "Magicbookwriter",
-    img: devaskImg,
+    img: magicImg,
     loss: true,
+    url: "http://magicbookwriter.hng.tech",
     desc: "A kid's story illustrator using AI. You describe the scene, and it will Illustrate it for you in a kid's storybook style.",
   },
   {
     name: "Zuvatar",
     img: devaskImg,
     loss: true,
+    url: "http://zuvatar.hng.tech",
     desc: "A Web app that allows users upload pictures to generate avatars using state-of-the-art Dreambooth technology.",
   },
   {
     name: "ApplyForMe",
-    img: devaskImg,
+    img: afmImg,
     loss: true,
-    desc: "helps users with job applications. The app helps the users search for jobs that fit the information on their application while they just prepare to attend interviews.",
+    url: "http://applyforme.hng.tech",
+    desc: "ApplyForMe is an application that helps users with job applications. The application helps the users search for jobs that fit the information on their application.",
   },
   {
-    name: "LoveMe",
+    name: "Lovemee",
     img: devaskImg,
     loss: true,
+    url: "http://loveme.hng.tech",
     desc: "A WebApp that allows users send personalized love letters to their loved ones, also allowing them to schedule it at a later date.",
   },
   {
     name: "Certgo",
-    img: devaskImg,
+    img: certImg,
     loss: true,
+    url: "http://certgo.hng.tech",
     desc: "A webapp that allows users generate, download and share certificates.",
   },
   {
     name: "Starfinder",
     img: devaskImg,
     loss: true,
+    url: "http://starfinder.hng.tech",
     desc: "A webapp that identifies very important personas that visit your website and converts them to high paying leads.",
   },
   {
-    name: "Speakbetter",
-    img: gritImg,
-    loss: true,
-    desc: "A multilingual app that makes you write better, speak better, increase your vocabulary, transcribe audio and correct text to aid accuracy for new and existing language speakers.",
-  },
-  {
     name: "Varena",
-    img: devaskImg,
+    img: arenaImg,
     loss: true,
+    url: "http://varena.hng.tech",
     desc: "is a physics web app that allows NFT users to battle with their NFTs for the ultimate prize money of $1,000.",
   },
+
   {
-    name: "Gritty Grammar",
-    img: gritImg,
+    name: "Yieldvest",
+    img: yieldImg,
     loss: true,
-    desc: "An application that revises grammar problems through discussions with a chat bot that uses AI to transcribe user input",
+    url: "http://yieldvest.hng.tech",
+    desc: "Yieldvest is a Website and desktop app that provides well curated stock recommendations based on fundamental analysis.",
   },
+
+  {
+    name: "Fixit",
+    img: fixitImg,
+    loss: true,
+    url: "http://yieldvest.hng.tech",
+    desc: "Yieldvest is a Website and desktop app that provides well curated stock recommendations based on fundamental analysis.",
+  },
+
+  {
+    name: "Yieldvest",
+    img: yieldImg,
+    loss: true,
+    url: "http://yieldvest.hng.tech",
+    desc: "Yieldvest is a Website and desktop app that provides well curated stock recommendations based on fundamental analysis.",
+  },
+  // desc: "An application that revises grammar problems through discussions with a chat bot that uses AI to transcribe user input",
 ];
 
 export default function Portfolio() {
