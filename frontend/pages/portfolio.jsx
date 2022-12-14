@@ -49,7 +49,7 @@ const products = [
     name: "Discripto",
     img: descriptoImg,
     loss: false,
-    desc: "A large-scale categorizing tool that largely focus on its ability to help users efficiently and effectively manage and organize their image collections, making it easier and faster to find and access the images they need.",
+    desc: "A tool that focus that help users efficiently and effectively manage and organize their image collections, making it easier and faster to find and access the images they need.",
   },
   {
     name: "Eval360",
@@ -97,7 +97,7 @@ const products = [
     name: "ApplyForMe",
     img: devaskImg,
     loss: true,
-    desc: "is an application that helps users with job applications. The application helps the users search for jobs that fit the information on their application while they just prepare to attend interviews.",
+    desc: "helps users with job applications. The app helps the users search for jobs that fit the information on their application while they just prepare to attend interviews.",
   },
   {
     name: "LoveMe",
@@ -121,7 +121,7 @@ const products = [
     name: "Speakbetter",
     img: gritImg,
     loss: true,
-    desc: "The multilingual app that makes you write better, speak better, increase your vocabulary and enable you to communicate better. A grammar tool that can transcribe audio and correct text to aid accuracy for new language learners and existing language speakers.",
+    desc: "A multilingual app that makes you write better, speak better, increase your vocabulary, transcribe audio and correct text to aid accuracy for new and existing language speakers.",
   },
   {
     name: "Varena",
