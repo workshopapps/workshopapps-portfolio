@@ -129,6 +129,12 @@ const products = [
     loss: true,
     desc: "is a physics web app that allows NFT users to battle with their NFTs for the ultimate prize money of $1,000.",
   },
+  {
+    name: "Gritty Grammar",
+    img: gritImg,
+    loss: true,
+    desc: "An application that revises grammar problems through discussions with a chat bot that uses AI to transcribe user input",
+  },
 ];
 
 export default function Portfolio() {
