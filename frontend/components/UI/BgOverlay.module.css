@@ -1,6 +1,6 @@
 .bg_overlay {
   position: fixed;
-  top: 100px;
+  /* top: 100px; */
   height: 100%;
   width: 100vw;
   background: rgba(41, 45, 50, 0.6);
@@ -9,6 +9,7 @@
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.1s linear, opacity 0.1s linear;
+  z-index: 500;
 }
 
 .bg_overlay.showBg {
