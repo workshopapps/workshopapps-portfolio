@@ -11,7 +11,20 @@ import kitchenImg from "../public/images/kitchen.svg";
 import streetrateImg from "../public/images/streetrate.svg";
 import arenaImg from "../public/images/arena.svg";
 import descriptoImg from "../public/images/descripto.svg";
-import devaskImg from "../public/images/devask.svg";
+import applyformImg from "../public/images/applyformeImg.svg";
+import catchupImg from "../public/images/catchUpImg.svg";
+import fixitImg from "../public/images/fixitImg.svg";
+import heedImg from "../public/images/heedImg.svg";
+import lovemeImg from "../public/images/lovemeImg.svg";
+import magicbookImg from "../public/images/magicbookwriterImg.svg";
+import opstadImg from "../public/images/opstadImg.svg";
+import reconcileaiImg from "../public/images/reconcileAiImg.svg";
+import reputeImg from "../public/images/reputeImg.svg";
+import tickedImg from "../public/images/tickedImg.svg";
+import trophicalweatherImg from "../public/images/tropicalWeather.svg";
+import varenaImg from "../public/images/varenaImg.svg";
+import zuvartarImg from "../public/images/zuvatarImg.svg";
+import voxclipsImg from "../public/images/voxclipsImg.svg";
 import Section from "../components/section";
 
 const products = [
@@ -23,7 +36,7 @@ const products = [
   },
   {
     name: "Ticked App",
-    img: soberpalImg,
+    img: tickedImg,
     loss: false,
     desc: "A todo app with a virtual assistant who calls users to remind them to do their task when it’s due. Users can also assign tasks to the virtual assistant to do for them",
   },
@@ -41,7 +54,7 @@ const products = [
   },
   {
     name: "VoxClips",
-    img: arenaImg,
+    img: voxclipsImg,
     loss: false,
     desc: "A web app that allows podcasters upload their podcast audio to get a talking head animated video version of their audio",
   },
@@ -53,67 +66,67 @@ const products = [
   },
   {
     name: "Eval360",
-    img: devaskImg,
+    img: fixitImg,
     loss: true,
     desc: "is a skill evaluator tool that is used for assessing engineers in an organisation.",
   },
   {
     name: "Heed",
-    img: devaskImg,
+    img: heedImg,
     loss: true,
     desc: "Customer support call transcript and sentimental analysis tool to rank sales and support team performance",
   },
   {
     name: "Soberpal",
-    img: devaskImg,
+    img: soberpalImg,
     loss: true,
     desc: "Is an alcohol addiction support app that helps users reduce their alcohol consumption.",
   },
   {
     name: "Repute",
-    img: devaskImg,
+    img: reputeImg,
     loss: true,
     desc: "Is a reputation management app that links businesses with lawyers to remove bad reviews.",
   },
   {
     name: "Tropical Weather",
-    img: devaskImg,
+    img: trophicalweatherImg,
     loss: true,
     desc: "Weather forecast app tailored specifically for tropical regions, which alerts users of upcoming weather events (rain, sun, fog) so they can prepare accordingly.",
   },
   {
     name: "Magicbookwriter",
-    img: devaskImg,
+    img: magicbookImg,
     loss: true,
     desc: "A kid's story illustrator using AI. You describe the scene, and it will Illustrate it for you in a kid's storybook style.",
   },
   {
     name: "Zuvatar",
-    img: devaskImg,
+    img: zuvartarImg,
     loss: true,
     desc: "A Web app that allows users upload pictures to generate avatars using state-of-the-art Dreambooth technology.",
   },
   {
     name: "ApplyForMe",
-    img: devaskImg,
+    img: applyformImg,
     loss: true,
     desc: "helps users with job applications. The app helps the users search for jobs that fit the information on their application while they just prepare to attend interviews.",
   },
   {
     name: "LoveMe",
-    img: devaskImg,
+    img: lovemeImg,
     loss: true,
     desc: "A WebApp that allows users send personalized love letters to their loved ones, also allowing them to schedule it at a later date.",
   },
   {
     name: "Certgo",
-    img: devaskImg,
+    img: arenaImg,
     loss: true,
     desc: "A webapp that allows users generate, download and share certificates.",
   },
   {
     name: "Starfinder",
-    img: devaskImg,
+    img: arenaImg,
     loss: true,
     desc: "A webapp that identifies very important personas that visit your website and converts them to high paying leads.",
   },
@@ -125,7 +138,7 @@ const products = [
   },
   {
     name: "Varena",
-    img: devaskImg,
+    img: varenaImg,
     loss: true,
     desc: "is a physics web app that allows NFT users to battle with their NFTs for the ultimate prize money of $1,000.",
   },
