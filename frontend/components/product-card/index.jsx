@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function ProductCard({ isFirst, name, img, desc, url }) {
   return (
-    <Stack spacing={3} w="full" maxW="330px" minW="300px">
+    <Stack spacing={3} w="full" maxW="40vw" minW="300px">
       {isFirst && <Heading fontSize="md">Product</Heading>}
       <Stack
         alignItems="center"
