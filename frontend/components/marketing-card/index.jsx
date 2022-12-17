@@ -10,7 +10,7 @@ import {
 
 function MarketingCard({ isFirst }) {
   return (
-    <Stack spacing={3} w="full" maxW="40vw" minW="300px">
+    <Stack spacing={3} w="full" maxW="50vw" minW="300px">
       {isFirst && <Heading fontSize="md">Marketing</Heading>}
       <Stack
         alignItems="center"
