@@ -5,11 +5,11 @@ import DashboardHeader from "../components/dashboard-header";
 import CustomSelect, { months, sortTypes } from "../components/custom-select";
 import ProductContainer from "../components/product-container";
 import coverlyImg from "../public/images/coverly.svg";
-import gritImg from "../public/images/grit.svg";
+// import gritImg from "../public/images/grit.svg";
 import soberpalImg from "../public/images/soberpal.svg";
-import kitchenImg from "../public/images/kitchen.svg";
+// import kitchenImg from "../public/images/kitchen.svg";
 import streetrateImg from "../public/images/streetrate.svg";
-import arenaImg from "../public/images/arena.svg";
+// import arenaImg from "../public/images/arena.svg";
 import descriptoImg from "../public/images/descripto.svg";
 import applyformImg from "../public/images/applyformeImg.svg";
 import catchupImg from "../public/images/catchUpImg.svg";
@@ -21,6 +21,7 @@ import starfinderImg from "../public/images/starfinder.png";
 import yieldvestImg from "../public/images/yieldvest.png";
 import reputeImg from "../public/images/repute.png";
 import speakbetterImg from "../public/images/speakbetter.png";
+import kitchendiaryImg from "../public/images/speakbetter.png";
 import lovemeImg from "../public/images/lovemeImg.svg";
 import magicbookImg from "../public/images/magicbookwriterImg.svg";
 import opspadImg from "../public/images/opspad.png";
@@ -49,7 +50,7 @@ const products = [
   },
   {
     name: "Kitchen Diary",
-    img: kitchenImg,
+    img: kitchendiaryImg,
     loss: false,
     desc: "is a web app that enables users edit and print out beautiful recipe cards in A4 format that they can use in their kitchen or as gifts to friends and family.",
     url:"https://kitchendiary.hng.tech/"
@@ -184,7 +185,7 @@ const products = [
     name: "Yieldvest",
     img: yieldvestImg,
     loss: true,
-    desc: "We provide well curated information to help you make smarter investment decisions based on Fundamental Analysis",
+    desc: "For stock investors looking to make smarter investment decisions, Yieldvest is a Website and Desktop app that provides well curated stock recommendations based on fundamental analysis.",
     url:"https://yieldvest.hng.tech/"
   },
   {
