@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function ProductCard({ isFirst, name, img, desc, url }) {
   return (
-    <Stack spacing={3} w="full" maxW="45vw" minW="300px">
+    <Stack spacing={3} w="full" maxW="50vw" minW="300px">
       {isFirst && <Heading fontSize="md">Product</Heading>}
       <Stack
         alignItems="center"
@@ -24,7 +24,7 @@ function ProductCard({ isFirst, name, img, desc, url }) {
               display="grid"
               placeItems="center"
               rounded={6}
-              background="linear-gradient(137.69deg, #EFF3FC 0%, #CFD4DE 99.91%)"
+              // background="linear-gradient(137.69deg, #EFF3FC 0%, #CFD4DE 99.91%)"
             >
               <Image alt="" src={img} />
             </Box>

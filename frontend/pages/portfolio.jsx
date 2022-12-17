@@ -13,13 +13,18 @@ import arenaImg from "../public/images/arena.svg";
 import descriptoImg from "../public/images/descripto.svg";
 import applyformImg from "../public/images/applyformeImg.svg";
 import catchupImg from "../public/images/catchUpImg.svg";
-import fixitImg from "../public/images/fixitImg.svg";
 import heedImg from "../public/images/heedImg.svg";
+import certgoImg from "../public/images/certgo.png";
+import devaskImg from "../public/images/devask.png";
+import eval360Img from "../public/images/eval360.png";
+import starfinderImg from "../public/images/starfinder.png";
+import yieldvestImg from "../public/images/yieldvest.png";
+import reputeImg from "../public/images/repute.png";
+import speakbetterImg from "../public/images/speakbetter.png";
 import lovemeImg from "../public/images/lovemeImg.svg";
 import magicbookImg from "../public/images/magicbookwriterImg.svg";
-import opspadImg from "../public/images/opstadImg.svg";
+import opspadImg from "../public/images/opspad.png";
 import reconcileaiImg from "../public/images/reconcileAiImg.svg";
-import reputeImg from "../public/images/reputeImg.svg";
 import tickedImg from "../public/images/tickedImg.svg";
 import trophicalweatherImg from "../public/images/tropicalWeather.svg";
 import varenaImg from "../public/images/varenaImg.svg";
@@ -72,7 +77,7 @@ const products = [
   },
   {
     name: "Eval360",
-    img: fixitImg,
+    img: eval360Img,
     loss: true,
     desc: "is a skill evaluator tool that is used for assessing engineers in an organisation.",
     url:"https://eval360.hng.tech/"
@@ -135,21 +140,21 @@ const products = [
   },
   {
     name: "Certgo",
-    img: arenaImg,
+    img: certgoImg,
     loss: true,
     desc: "A webapp that allows users generate, download and share certificates.",
     url:"https://certgo.hng.tech/"
   },
   {
     name: "Starfinder",
-    img: arenaImg,
+    img: starfinderImg,
     loss: true,
     desc: "A webapp that identifies very important personas that visit your website and converts them to high paying leads.",
     url:"https://starfinder.hng.tech/"
   },
   {
     name: "Speakbetter",
-    img: gritImg,
+    img: speakbetterImg,
     loss: true,
     desc: "A multilingual app that makes you write better, speak better, increase your vocabulary, transcribe audio and correct text to aid accuracy for new and existing language speakers.",
     url:"https://speakbetter.hng.tech/"
@@ -177,7 +182,7 @@ const products = [
   },
   {
     name: "Yieldvest",
-    img: gritImg,
+    img: yieldvestImg,
     loss: true,
     desc: "We provide well curated information to help you make smarter investment decisions based on Fundamental Analysis",
     url:"https://yieldvest.hng.tech/"
@@ -191,7 +196,7 @@ const products = [
   },
   {
     name: "DevAsk",
-    img: gritImg,
+    img: devaskImg,
     loss: true,
     desc: "Devask helps you get answers to your technical questions immediately. You also get rewarded when you provide correct answers to questions.",
     url:"https://devask.hng.tech/"
