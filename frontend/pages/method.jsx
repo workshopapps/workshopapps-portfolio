@@ -107,9 +107,11 @@ export default function Method() {
             <Stack pl={{ base: 0, md: 0 }} spacing={10} pb={20}>
               {selectionProcess.map((process) => (
                 <HStack
-                  gap={{ base: 4, md: 20 }}
+                  gap={{ base: 4, md: 12 }}
                   key={process.step}
                   flexWrap="wrap"
+                  alignItems="center"
+                  justifyContent="center"
                 >
                   <MethodCard text={process.text} title={process.title} />
                   <Progress
@@ -141,9 +143,11 @@ export default function Method() {
             <Stack pl={{ base: 0, md: 0 }} spacing={10} pb={20}>
               {afterProcess.map((process) => (
                 <HStack
-                  gap={{ base: 4, md: 20 }}
+                  gap={{ base: 4, md: 12 }}
                   key={process.step}
                   flexWrap="wrap"
+                  alignItems="center"
+                  justifyContent="center"
                 >
                   <MethodCard text={process.text} title={process.title} />
                   <Progress
