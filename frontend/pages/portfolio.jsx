@@ -21,7 +21,7 @@ import starfinderImg from "../public/images/starfinder.png";
 import yieldvestImg from "../public/images/yieldvest.png";
 import reputeImg from "../public/images/repute.png";
 import speakbetterImg from "../public/images/speakbetter.png";
-import kitchendiaryImg from "../public/images/speakbetter.png";
+import kitchendiaryImg from "../public/images/kitchenDiary.svg";
 import lovemeImg from "../public/images/lovemeImg.svg";
 import magicbookImg from "../public/images/magicbookwriterImg.svg";
 import opspadImg from "../public/images/opspad.png";
