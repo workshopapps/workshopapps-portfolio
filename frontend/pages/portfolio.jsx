@@ -185,7 +185,7 @@ const products = [
     name: "Yieldvest",
     img: yieldvestImg,
     loss: true,
-    desc: "For stock investors looking to make smarter investment decisions, Yieldvest is a Website and Desktop app that provides well curated stock recommendations based on fundamental analysis.",
+    desc: "For stock investors looking to make smarter investment decisions, Yieldvest is a Webapp that provides well curated stock recommendations based on fundamental analysis.",
     url:"https://yieldvest.hng.tech/"
   },
   {
