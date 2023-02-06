@@ -8,7 +8,7 @@ import coverlyImg from "../public/images/coverly.svg";
 // import gritImg from "../public/images/grit.svg";
 import soberpalImg from "../public/images/soberpal.svg";
 // import kitchenImg from "../public/images/kitchen.svg";
-import streetrateImg from "../public/images/streetrate.svg";
+import streetrateImg from "../public/images/streetrates.jpg";
 // import arenaImg from "../public/images/arena.svg";
 import descriptoImg from "../public/images/descripto.svg";
 import applyformImg from "../public/images/applyformeImg.svg";
