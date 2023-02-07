@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import heroImg from "./../public/about-hero-image.png";
 import style from "../styles/Stories.module.css";
 import Section from "../components/section";
